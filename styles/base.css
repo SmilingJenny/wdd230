@@ -1,7 +1,33 @@
 body {
     display: grid;
-    grid-template: auto / auto;
-    align-self: center;
+    height: 100vh;
+    margin: 0;
+    place-items: center;
+}
+
+header {
+    width: 25vw;
+    background-color: #764118;
+    color: white;
+    font-family: 'Josefin Slab', serif;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#profile-pic{
+    grid-column: 1-2;
+}
+
+h1 {
+    grid-column: 2-3;
+}
+
+nav {
+    background-color: black;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    width: 25vw;
 }
 
 main {
@@ -10,9 +36,19 @@ main {
     align-content: center;
 }
 
-nav {
-    background-color: black;
+h2 {
+    padding: 10px;
+    border-bottom: 1px solid lightgrey;
     text-align: center;
+}
+
+h3 {
+    background-color: #496314;
+    color: white;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 10px 0;
 }
 
 li {
@@ -26,9 +62,19 @@ a {
 }
 
 .card {
+    margin: 20px 0;
     border: 1px solid;
     border-color: lightgray;
     border-radius: 5px;
-    padding: 10px;
+    padding: 0;
     box-shadow: 5px 5px 5px #f1f1f1;
+    text-indent: 20px;
+}
+
+footer {
+    background-color: #764118;
+    color: white;
+    font-family: 'Josefin Slab', serif;
+    text-align: center;
+    width: 25vw;
 }
