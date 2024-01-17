@@ -1,28 +1,25 @@
-body {
-    display: grid;
-    place-items: center;
+header,
+nav,
+main,
+footer {
+    max-width: 850px;
+    margin: 0 auto;
 }
 
 header {
-    width: 25vw;
     background-color: #764118;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    justify-items: center;
-    align-items: center;
 }
 
 #profile-pic {
-    grid-column: 1/2;
     padding: 20px;
     justify-self: right;
 }
 
 h1 {
-    grid-column: 2/3;
     line-height: 1.5;
-    justify-self: left;
-    padding: 0 5%;
+    padding-left: 25px;
     color: white;
     font-family: 'Josefin Slab', serif;
 }
@@ -31,16 +28,15 @@ nav {
     background-color: black;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
-    width: 25vw;
+}
+
+nav ul {
+    padding: 0;
 }
 
 nav a {
     color: white;
-}
-
-main {
-    border-color: azure;
-    width: 25vw;
+    display: block;
 }
 
 h2 {
@@ -88,5 +84,4 @@ footer {
     color: white;
     font-family: 'Josefin Slab', serif;
     text-align: center;
-    width: 25vw;
 }
