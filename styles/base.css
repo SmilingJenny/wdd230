@@ -37,6 +37,7 @@ nav {
 nav a {
     color: white;
 }
+
 main {
     border-color: azure;
     width: 25vw;
@@ -75,6 +76,11 @@ a {
     padding: 0;
     box-shadow: 5px 5px 5px #f1f1f1;
     text-indent: 20px;
+    display: grid;
+}
+
+section {
+    grid-column: auto;
 }
 
 footer {
