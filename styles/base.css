@@ -2,7 +2,7 @@ header,
 nav,
 main,
 footer {
-    max-width: 850px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -10,10 +10,11 @@ header {
     background-color: #764118;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    
 }
 
 #profile-pic {
-    padding: 20px;
+    padding: 15px;
     justify-self: right;
 }
 
@@ -22,25 +23,27 @@ h1 {
     padding-left: 25px;
     color: white;
     font-family: 'Josefin Slab', serif;
+    align-self: center;
 }
 
 nav {
     background-color: black;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
 }
 
 nav ul {
-    padding: 0;
+    margin:0;
+    padding: 10px 0;
+    text-align: center;
 }
 
 nav a {
     color: white;
+    font-family: 'Josefin Sans', sans-serif;
     display: block;
 }
 
 h2 {
-    padding: 10px;
+    padding: 15px;
     border-bottom: 1px solid lightgrey;
     text-align: center;
     font-family: 'Josefin Slab', serif;
