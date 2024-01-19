@@ -10,7 +10,6 @@ header {
     background-color: #764118;
     display: grid;
     grid-template-columns: 1fr 2fr;
-
 }
 
 #profile-pic {
@@ -32,7 +31,7 @@ nav {
 
 nav ul {
     margin: 0;
-    padding: 10px 0;
+    padding: 10px;
     text-align: center;
 }
 
@@ -40,6 +39,22 @@ nav a {
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     display: block;
+    padding: 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: grid;
+}
+
+.card {
+    margin: 0 0 20px 0;
+    border: 1px solid;
+    border-color: lightgray;
+    box-shadow: 5px 5px 5px #f1f1f1;
 }
 
 h2 {
@@ -60,27 +75,11 @@ h3 {
 
 li {
     list-style: none;
-    padding: 5px;
 }
 
 a {
     text-decoration: none;
     color: #316ead;
-}
-
-.card {
-    margin: 20px 0;
-    border: 1px solid;
-    border-color: lightgray;
-    border-radius: 5px;
-    padding: 0;
-    box-shadow: 5px 5px 5px #f1f1f1;
-    text-indent: 20px;
-    display: grid;
-}
-
-section {
-    grid-column: auto;
 }
 
 #information {
