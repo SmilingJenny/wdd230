@@ -12,6 +12,7 @@ footer {
 .banner {
 	padding: 1rem;
 	background-color: #eee;
+	text-align: center;
 }
 
 h1 {
@@ -20,7 +21,7 @@ h1 {
 
 main {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 2fr 1fr;
 }
 
 h2 {
@@ -33,7 +34,20 @@ article p {
 	text-align: justify;
 }
 
+article, h3 {
+	padding: 0 1rem;
+}
+
+h3 {
+	padding: 0 2rem;
+}
+
+section {
+	padding: 1rem;
+}
+
 .callout {
+	grid-column: 1/3;
 	color: white;
 	background-color: #702963;
 	padding: 20px;
