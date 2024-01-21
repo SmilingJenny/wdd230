@@ -1,0 +1,17 @@
+@media screen and (min-width: 640px) {
+    header,
+    main,
+    footer {
+        max-width: 90%;
+        margin: 2rem auto;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #thirdCard {
+        grid-column: 1/3;
+    }
+    
+}

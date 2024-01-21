@@ -1,0 +1,66 @@
+header,
+main,
+footer {
+    max-width: 95%;
+    margin: 2rem auto;
+    font-family: 'Josefin Sans', serif;
+}
+
+header, footer {
+    background-color: rgb(0, 48, 125);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 2rem;
+    font-weight: 600;
+}
+
+h2 {
+    margin: 0;
+    padding-bottom: 2rem;
+    font-weight: normal;
+}
+
+main {
+    display: grid;
+    grid-gap: 2rem;
+}
+
+section {
+    padding: 1rem;
+    /*If I remove this, the img have no padding. If I keep it the heading background doesn't fill the space.*/
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px rgb(240, 238, 238);
+}
+
+h3 {
+    margin: 0;
+    padding: 1rem;
+    background-color: rgb(0, 48, 125);
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+
+li {
+    padding: 1rem;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+p {
+    text-indent: 1rem;
+    /* padding: 1rem;  */
+}
+
+footer {
+    padding: 1rem;
+}
