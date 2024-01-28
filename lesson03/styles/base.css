@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+font-family: 'EB Garamond', serif;
+font-family: 'Montserrat', sans-serif; 
+*/
+
+/* 
+blue: #205893.
+orange: #D2691E.
+charcoal:#242325.    
+*/
+
+header,
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #242325;
+    color: #205893;
+}
+
+section {
+    margin: 2.5rem;
+}
+
+h1 {
+    font-family: 'EB Garamond', serif;
+}
+
+h2,
+h4 {
+    margin: .5rem 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #D2691E;
+}
+
+h3 {
+    margin-top: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #205893;
+}
+
+p {
+    line-height: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #242325;
+}
+
+li {
+    margin: .5rem 0 .5rem 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #242325;
+}
+
+#wireframes {
+    display: flex;
+    flex: 1 1 100%;
+}
+
+a {
+    color: #205893;
+    margin-left: .5rem;
+}
