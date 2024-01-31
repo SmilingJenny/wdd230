@@ -1,0 +1,23 @@
+@media screen and (min-width: 640px) {
+
+    #hamButton {
+        display: none;
+    }
+
+    #mainNavBar {
+        display: flex;
+    }
+
+    #mainNavBar li {
+        flex: 1 1 100%;
+    }
+/* 
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+
+    h2 {
+        grid-column: 1/3;
+    } */
+}
