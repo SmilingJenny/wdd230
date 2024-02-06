@@ -84,6 +84,7 @@ a:active {
     background-color: var(--main-orange);
     color: white;
     font-family: var(--main-text-font);
+    font-weight: bold;
     margin: 1rem;
     padding: 1rem .5rem;
 }
