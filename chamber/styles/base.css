@@ -14,7 +14,6 @@
     --main-text-font: 'Montserrat', sans-serif;
 }
 
-/* iframe, */
 header,
 nav,
 #heroImage,
@@ -24,9 +23,12 @@ footer {
     margin: 0 auto;
 }
 
-
 header {
     position: relative;
+}
+
+#logo {
+    margin: 1rem;
 }
 
 #hamButton {
@@ -72,21 +74,26 @@ header {
 a:hover,
 a:active {
     text-decoration: underline;
-} 
+}
 
 #joinButton {
     display: block;
+    width: 7rem;
     border: none;
     background: none;
     background-color: var(--main-orange);
     color: white;
     font-family: var(--main-text-font);
-    margin: 1rem 0;
+    margin: 1rem;
     padding: 1rem .5rem;
 }
 
+#heroImage {
+    text-align: center;
+}
+
 #heroImage img {
-    margin: 1rem;
+    max-width: 100%;
 }
 
 main {
@@ -98,6 +105,12 @@ main {
     border: 1px solid;
     border-color: lightgray;
     box-shadow: 5px 5px 5px #f1f1f1;
+    padding: .5rem 1rem;
+    font-family: var(--main-text-font);
+}
+
+h3 {
+    color: var(--main-orange);
 }
 
 li {
@@ -109,11 +122,6 @@ a {
     text-decoration: none;
     color: var(--main-blue);
 }
-
-/* iframe {
-    display: block;
-    padding-bottom: 20px;
-} */
 
 footer {
     margin-top: 2rem;
