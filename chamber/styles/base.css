@@ -101,6 +101,13 @@ main {
     display: grid;
 }
 
+h1 {
+    grid-column: 1/4;
+    text-align: center;
+    font-family: var(--main-title-font);
+    color: var(--main-blue);
+}
+
 .card {
     margin: 1rem;
     border: 1px solid;
@@ -110,7 +117,7 @@ main {
     font-family: var(--main-text-font);
 }
 
-h3 {
+h2 {
     color: var(--main-orange);
 }
 
