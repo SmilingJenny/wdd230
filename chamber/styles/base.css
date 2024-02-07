@@ -82,7 +82,7 @@ a:active {
     border: none;
     background: none;
     background-color: var(--main-orange);
-    color: white;
+    color: var(--main-black);
     font-family: var(--main-text-font);
     font-weight: bold;
     margin: 1rem;
