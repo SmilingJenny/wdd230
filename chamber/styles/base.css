@@ -15,7 +15,6 @@
 }
 
 header,
-nav,
 #heroImage,
 main,
 footer {
@@ -36,7 +35,7 @@ header {
     border: none;
     background: none;
     position: absolute;
-    right: 2rem;
+    right: 1rem;
     top: 160px;
 }
 
@@ -77,6 +76,9 @@ a:active {
 }
 
 #joinButton {
+    position: absolute;
+    top: 4.7rem;
+    right: .05rem;
     display: block;
     width: 7rem;
     border: none;
@@ -91,7 +93,7 @@ a:active {
 
 #modeButton {
     position: absolute;
-    top: 3rem;
+    top: .1rem;
     right: .03rem;
     display: block;
     width: 7rem;
@@ -109,26 +111,18 @@ a:active {
     content: "Dark Mode";
 }
 
-#modeButton.darkMode::after {
+#modeButton.darkMode::before {
     content: "Light Mode";
 }
 
 .darkMode {
-    background-color: var(--main-charcoal-black);
+    background-color: var(--main-black);
     color: var(--main-white);
 }
 
-.darkMode #logo {
-    display: none;
-}
-
-.darkMode #logo::before {
-    content: url();
-}
-
-
 .darkMode #modeButton {
     border-color: var(--main-white);
+    /* background-color: var(--main-charcoal-black); */
     color: var(--main-white);
 }
 
