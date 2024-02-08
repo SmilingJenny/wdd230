@@ -10,6 +10,7 @@ button.addEventListener("click", () => {
 
     const li = document.createElement('li');
     const delButton = document.createElement('button');
+    delButton.setAttribute("aria-label", "delete scripture entry")
 
     li.textContent = input.value;
     delButton.textContent = "❌";
