@@ -37,7 +37,7 @@ header {
     background: none;
     position: absolute;
     right: 2rem;
-    top: 132px;
+    top: 160px;
 }
 
 #hamButton::before {
