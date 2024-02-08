@@ -16,6 +16,15 @@ h1 {
     font-size: 1.5rem;
 }
 
+h2 {
+    margin: .5rem;
+    font-size: medium;
+}
+
+a {
+    color: rgb(5, 5, 225);
+}
+
 main {
     margin: 1rem auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
