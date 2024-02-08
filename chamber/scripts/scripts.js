@@ -5,3 +5,4 @@ hamButton.addEventListener("click", () => {
     hamButton.classList.toggle("show");
     mainNavBar.classList.toggle("show");
 });
+

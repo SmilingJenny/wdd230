@@ -89,6 +89,68 @@ a:active {
     padding: 1rem .5rem;
 }
 
+#modeButton {
+    position: absolute;
+    top: 3rem;
+    right: .03rem;
+    display: block;
+    width: 7rem;
+    margin: 1rem;
+    padding: 1rem .5rem;
+    border: 1px solid;
+    border-color: var(--main-blue);
+    background: none;
+    color: var(--main-blue);
+    font-family: var(--main-text-font);
+    font-weight: normal;
+}
+
+#modeButton::before {
+    content: "Dark Mode";
+}
+
+#modeButton.darkMode::after {
+    content: "Light Mode";
+}
+
+.darkMode {
+    background-color: var(--main-charcoal-black);
+    color: var(--main-white);
+}
+
+.darkMode #logo {
+    display: none;
+}
+
+.darkMode #logo::before {
+    content: url();
+}
+
+
+.darkMode #modeButton {
+    border-color: var(--main-white);
+    color: var(--main-white);
+}
+
+.darkMode #joinButton {
+    border: 1px solid var(--main-white);
+    background-color: var(--main-charcoal-black);
+    color: var(--main-white);
+}
+
+.darkMode .card {
+    box-shadow: none;
+}
+
+.darkMode h1 {
+    color: var(--main-white);
+}
+
+.darkMode h2 {
+    color: var(--main-white);
+}
+
+
 #heroImage {
     text-align: center;
 }
