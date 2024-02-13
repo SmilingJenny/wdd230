@@ -22,6 +22,11 @@ footer {
     margin: 0 auto;
 }
 
+.darkMode {
+    background-color: var(--main-black);
+    color: var(--main-white);
+}
+
 header {
     position: relative;
 }
@@ -44,6 +49,10 @@ header {
     font-size: 3rem;
     font-weight: 600;
     line-height: 1.5rem;
+}
+
+.darkMode #hamButton {
+    color: var(--main-white);
 }
 
 #hamButton.show::before {
@@ -95,11 +104,6 @@ a:active, #modeButton:hover,
 
 #modeButton::before {
     content: "Dark Mode";
-}
-
-.darkMode {
-    background-color: var(--main-black);
-    color: var(--main-white);
 }
 
 #modeButton.darkMode::before {
