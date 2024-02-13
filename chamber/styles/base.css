@@ -71,24 +71,9 @@ header {
 }
 
 a:hover,
-a:active {
+a:active, #modeButton:hover,
+#modeButton:active, #joinButton:hover, #joinButton:active {
     text-decoration: underline;
-}
-
-#joinButton {
-    position: absolute;
-    top: 4.7rem;
-    right: .05rem;
-    display: block;
-    width: 7rem;
-    border: none;
-    background: none;
-    background-color: var(--main-orange);
-    color: var(--main-black);
-    font-family: var(--main-text-font);
-    font-weight: bold;
-    margin: 1rem;
-    padding: 1rem .5rem;
 }
 
 #modeButton {
@@ -99,9 +84,10 @@ a:active {
     width: 7rem;
     margin: 1rem;
     padding: 1rem .5rem;
-    border: 1px solid;
-    border-color: var(--main-blue);
     background: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--main-blue);
     color: var(--main-blue);
     font-family: var(--main-text-font);
     font-weight: normal;
@@ -111,18 +97,34 @@ a:active {
     content: "Dark Mode";
 }
 
-#modeButton.darkMode::before {
-    content: "Light Mode";
-}
-
 .darkMode {
     background-color: var(--main-black);
     color: var(--main-white);
 }
 
-.darkMode #modeButton {
+#modeButton.darkMode::before {
+    content: "Light Mode";
+}
+
+#modeButton.darkMode {
     border-color: var(--main-white);
     color: var(--main-white);
+}
+
+#joinButton {
+    position: absolute;
+    top: 4.7rem;
+    right: .05rem;
+    display: block;
+    width: 7rem;
+    margin: 1rem;
+    padding: 1rem .5rem;
+    border: none;
+    background: none;
+    background-color: var(--main-orange);
+    color: var(--main-black);
+    font-family: var(--main-text-font);
+    font-weight: bold;
 }
 
 .darkMode #joinButton {
@@ -130,19 +132,6 @@ a:active {
     background-color: var(--main-charcoal-black);
     color: var(--main-white);
 }
-
-.darkMode .card {
-    box-shadow: none;
-}
-
-.darkMode h1 {
-    color: var(--main-white);
-}
-
-.darkMode h2 {
-    color: var(--main-white);
-}
-
 
 #heroImage {
     text-align: center;
@@ -163,6 +152,10 @@ h1 {
     color: var(--main-blue);
 }
 
+.darkMode h1 {
+    color: var(--main-white);
+}
+
 .card {
     margin: 1rem;
     border: 1px solid;
@@ -172,9 +165,17 @@ h1 {
     font-family: var(--main-text-font);
 }
 
+.darkMode .card {
+    box-shadow: none;
+}
+
 h2 {
     color: var(--main-orange);
     margin-bottom: 1rem;
+}
+
+.darkMode h2 {
+    color: var(--main-white);
 }
 
 li {
