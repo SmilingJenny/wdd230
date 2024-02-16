@@ -13,10 +13,10 @@ modeButton.addEventListener("click", () => {
 
     console.log(logo.src)
 
-    if (logo.src.endsWith("images/cropped-provo-logo.png")) {
-        logo.src = "images/cropped-white-logo.png";
+    if (logo.src.endsWith("images/webp-blue-logo.webp")) {
+        logo.src = "images/webp-white-logo.webp";
     } else {
-        logo.src = "images/cropped-provo-logo.png"
+        logo.src = "images/webp-blue-logo.webp"
     }
 });
 
