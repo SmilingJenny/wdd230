@@ -75,6 +75,27 @@ main {
     display: grid;
 }
 
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.herolabel {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    border: 1px solid #9a9a9a;
+    padding: 0 10px;
+    font-family: 'Josefin Slab', serif;
+    font-size: large;
+    font-weight: 600;
+    color: #a44887;
+}
+
 .card {
     margin: 0 0 20px 0;
     border: 1px solid;
