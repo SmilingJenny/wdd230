@@ -21,8 +21,8 @@
     <!-- Built on favicon.io - Icon design specks: font: Frank Ruhl Libre, colors: main-blue and #ffff, font size: 60, shape: rounded square-->
     <meta property="og:title" content="Provo Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="/images/med-cropped-provo-mountains.webp">
-    <meta property="og:url" content="https://smilingjenny.github.io/wdd230/chamber">
+    <meta property="og:image" content="images/1500x750-mountains-pic.webp">
+    <meta property="og:url" content="https://smilingjenny.github.io/wdd230/chamber/">
 </head>
 
 <body>
@@ -43,8 +43,16 @@
         </button>
     </header>
     <div id="heroImage">
-        <img src="images/large-cropped-provo-mountains.webp" alt="Picture of Timpanogos Mountain covered in snow."
-            width="1048" height="499">
+        <picture>
+            <source srcset="images/500x250-mountains-pic.webp" media="(max-width: 640px)">
+            <source srcset="images/1000x500-mountains-pic.webp" media="(max-width: 1200px)">
+            <img src="images/1500x750-mountains-pic.webp" alt="Picture of Timpanogos Mountain covered in snow."
+                width="1500" height="750">
+            <!-- <source srcset="images/1500x750-mountains-pic.webp" media="(min-width: 1200px)">
+            <source srcset="images/1000x500-mountains-pic.webp" media="(min-width: 640px)">
+            <img src="images/500x250-mountains-pic.webp" alt="Picture of Timpanogos Mountain covered in snow."
+                width="500" height="250"> -->
+        </picture>
     </div>
     <main>
         <h1>Provo Chamber of Commerce</h1>
