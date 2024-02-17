@@ -11,8 +11,6 @@ modeButton.addEventListener("click", () => {
     heroImage.classList.toggle("darkMode");
     main.classList.toggle("darkMode");
 
-    console.log(logo.src)
-
     if (logo.src.endsWith("images/webp-blue-logo.webp")) {
         logo.src = "images/webp-white-logo.webp";
     } else {

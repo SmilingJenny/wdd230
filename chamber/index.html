@@ -46,8 +46,8 @@
         <picture>
             <source srcset="images/w06-hero/large-labeled-wdd230-org.webp" media="(min-width: 1200px)">
             <source srcset="images/w06-hero/medium-labeled-wdd230-org.webp" media="(min-width: 640px)">
-            <img src="images/w06-hero/small-labeled-wdd230-org.webp" alt="Picture of Timpanogos Mountain covered in snow."
-                width="500" height="250">
+            <img src="images/w06-hero/small-labeled-wdd230-org.webp"
+                alt="Picture of Timpanogos Mountain covered in snow." width="500" height="250">
             <!-- <source srcset="images/1500x750-mountains-pic.webp" media="(min-width: 1200px)">
             <source srcset="images/1000x500-mountains-pic.webp" media="(min-width: 640px)">
             <img src="images/500x250-mountains-pic.webp" alt="Picture of Timpanogos Mountain covered in snow."
@@ -68,7 +68,8 @@
         </section>
         <section class="card">
             <h2>Weather</h2>
-            <p>Local weather place holder</p>
+            <p>The current temperature in Provo, UT is <span id="temp">43</span>°F with wind speed of <span
+                    id="wind">8</span> MPH and windchill of <span id="chill"></span>°F.</p>
         </section>
         <section class="card">
             <h2>Company Spotlights</h2>
@@ -82,6 +83,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/scripts.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>
