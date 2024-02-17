@@ -7,7 +7,7 @@ const logo = document.querySelector("#logo");
 
 modeButton.addEventListener("click", () => {
     header.classList.toggle("darkMode");
-    modeButton.classList.toggle("darkMode");
+    // modeButton.classList.toggle("darkMode");
     heroImage.classList.toggle("darkMode");
     main.classList.toggle("darkMode");
 

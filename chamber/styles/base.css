@@ -93,26 +93,26 @@ a:active, #modeButton:hover,
     width: 7rem;
     margin: 1rem;
     padding: 1rem .5rem;
-    background: var(--main-white);
+    background-color:transparent;
+    border-color: transparent;
     border-width: 1px;
     border-style: solid;
-    border-color: var(--main-blue);
     color: var(--main-blue);
     font-family: var(--main-text-font);
     font-weight: normal;
+    border-color: var(--main-blue);
 }
 
 #modeButton::before {
     content: "Dark Mode";
 }
 
-#modeButton.darkMode::before {
+.darkMode #modeButton::before {
     content: "Light Mode";
 }
 
-#modeButton.darkMode {
+.darkMode #modeButton {
     border-color: var(--main-white);
-    background-color: var(--main-black);
     color: var(--main-white);
 }
 
@@ -124,9 +124,11 @@ a:active, #modeButton:hover,
     width: 7rem;
     margin: 1rem;
     padding: 1rem .5rem;
-    border: none;
+    background-color: transparent;
+    border-color: transparent;
     background-color: var(--main-orange);
-    color: var(--main-black);
+    color: white;
+    font-size: 19px;
     font-family: var(--main-text-font);
     font-weight: bold;
 }
