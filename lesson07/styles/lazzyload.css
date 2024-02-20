@@ -4,6 +4,8 @@ footer {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -11,4 +13,16 @@ img {
     margin: 1rem 0;
     max-width: 100%;
     height: auto;
+    background: black;
+    animation: fade 7s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
