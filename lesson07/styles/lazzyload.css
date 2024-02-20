@@ -1,0 +1,14 @@
+header,
+main,
+footer {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+img {
+    margin: 1rem 0;
+    max-width: 100%;
+    height: auto;
+}
