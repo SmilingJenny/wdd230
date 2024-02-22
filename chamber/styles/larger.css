@@ -70,6 +70,7 @@
 
     .discover figure:hover {
         box-shadow: 5px 5px 5px #787676;
-        rotate: .025turn;
+        /* Cool, but validation didn't like it */
+        /* rotate: .025turn; */
     }
 }
