@@ -67,4 +67,9 @@
     .discover .maincontent {
         grid-column: 2/3;
     }
+
+    .discover figure:hover {
+        box-shadow: 5px 5px 5px #787676;
+        rotate: .025turn;
+    }
 }
