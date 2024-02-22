@@ -86,10 +86,14 @@ a:active,
 #joinButton:hover,
 #joinButton:active {
     text-decoration: underline;
+    text-underline-offset: .5em;
 }
 
 .active {
     text-decoration: underline;
+    text-underline-offset: .5em;
+    text-decoration-color: var(--main-blue);
+    text-decoration-thickness: .15rem;
 }
 
 #modeButton {
