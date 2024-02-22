@@ -250,6 +250,12 @@ main.discover {
     display: inline-block;
 }
 
+.discover h2 {
+    margin: 1rem;
+    text-align: center;
+    color: var(--main-blue);
+}
+
 footer {
     margin-top: 2rem;
     background-color: var(--main-blue);
