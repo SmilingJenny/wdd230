@@ -215,28 +215,25 @@ main.discover {
     margin-top: 1.5rem;
 }
 
-/* .discover .sidebar {
-    padding: 0 1rem;
-} */
+.discover h1 {
+    margin: 1rem;
+    grid-column: 1/3;
+    text-align: center;
+    color: var(--main-blue);
+}
 
-/* had to add the three following rules and remove the above one to make the card class look good on the side bar */
 .discover .card {
     padding-top: 0;
     margin-bottom: 2rem;
 }
 
-.discover .sidebar h1 {
-    margin-top: 0;
+.discover h2 {
+    margin: 1rem;
+    text-align: center;
+    color: var(--main-orange);
+    font-family: var(--main-text-font);
 }
 
-.discover .maincontent h1 {
-    margin-top: 1rem;
-}
-
-/* When I do margin it works but bumps the headings down, when I do margin bottom, it stops working */
-/* .discover .sidebar section {
-    margin-bottom: 8rem 0;
-} */
 
 .discover figure {
     margin: 2rem 6rem;
@@ -248,12 +245,6 @@ main.discover {
 
 .discover figcaption {
     display: inline-block;
-}
-
-.discover h2 {
-    margin: 1rem;
-    text-align: center;
-    color: var(--main-blue);
 }
 
 footer {
