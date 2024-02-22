@@ -80,8 +80,11 @@ header {
 }
 
 a:hover,
-a:active, #modeButton:hover,
-#modeButton:active, #joinButton:hover, #joinButton:active {
+a:active,
+#modeButton:hover,
+#modeButton:active,
+#joinButton:hover,
+#joinButton:active {
     text-decoration: underline;
 }
 
@@ -93,7 +96,7 @@ a:active, #modeButton:hover,
     width: 7rem;
     margin: 1rem;
     padding: 1rem .5rem;
-    background-color:transparent;
+    background-color: transparent;
     border-color: transparent;
     border-width: 1px;
     border-style: solid;
@@ -148,7 +151,7 @@ a:active, #modeButton:hover,
     height: auto;
 }
 
-main {
+main.chamber {
     display: grid;
 }
 
@@ -197,6 +200,31 @@ li {
 a {
     text-decoration: none;
     color: var(--main-blue);
+}
+
+main.discover {
+    display: grid;
+}
+
+.discover .sidebar {
+    padding: 0 1rem;
+}
+
+.discover .sidebar section {
+    margin-bottom: 8rem 0;
+    /* When I do margin it works but bumps the headings down, when I do margin bottom, it stops working */
+}
+
+.discover figure {
+    margin: 2rem 6rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--main-blue);
+    color: var(--main-white);
+}
+
+.discover figcaption {
+    display: inline-block;
 }
 
 footer {

@@ -44,12 +44,27 @@
         display: none;
     }
 
-    main {
+    main.chamber {
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 20px;
     }
 
-    h1 {
+    .chamber h1 {
         grid-column: 1/4;
+    }
+
+    main.discover {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .discover .sidebar{
+        grid-column: 1/2;
+    }
+
+    .discover .maincontent {
+        grid-column: 2/3;
     }
 }

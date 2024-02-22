@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provo Chamber of Commerce</title>
+    <meta name="description"
+        content="This site is a course assignment Chamber of Commerce page for Jennifer Walton's course work for BYU-I class WDD 230 - Web Frontend Development.">
+    <meta name="author" content="Jennifer Walton">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="logo-wbg-favicon/favicon-16x16.png" type="image/png">
+    <!-- Built on favicon.io - Icon design specks: font: Frank Ruhl Libre, colors: main-blue and #ffff, font size: 60, shape: rounded square-->
+    <meta property="og:title" content="Provo Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://smilingjenny.github.io/wdd230/chamber/images/1500x750-mountains-pic.webp">
+    <meta property="og:url" content="https://smilingjenny.github.io/wdd230/chamber/">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="images/webp-blue-logo.webp" alt="Provo Chamber of commerce logo with blue mountain icon."
+            width="100" height="163">
+        <button id="hamButton" aria-label="Nav Menu."></button>
+        <nav>
+            <ul id="mainNavBar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Membership</a></li>
+            </ul>
+        </nav>
+        <button id="joinButton" aria-label="Join Us button.">Join Us</button>
+        <button id="modeButton" aria-label="Dark mode button.">
+
+        </button>
+    </header>
+    <main class="discover">
+        <div class="sidebar">
+            <section>
+                <h1>Demographics</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore minima officiis deleniti vero
+                    eveniet
+                    repellendus, perspiciatis quaerat mollitia rerum ratione asperiores nobis vel natus reprehenderit,
+                    sit
+                    facilis doloremque obcaecati blanditiis?</p>
+            </section>
+            <section>
+                <h1>Calendar</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, ea dolorum odio enim, adipisci
+                    consectetur quaerat iste maiores labore voluptas hic corporis voluptate, odit velit aperiam sunt
+                    pariatur natus perferendis.</p>
+            </section>
+            <section>
+                <h1>Attractions</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dicta temporibus nostrum beatae
+                    veniam
+                    optio rerum, vel placeat, quam dignissimos officia dolore assumenda culpa esse quasi, qui
+                    architecto.
+                    Dolorum, perspiciatis?</p>
+            </section>
+        </div>
+        <div class="maincontent">
+            <h1>Images</h1>
+            <figure>
+                <img src="images/discover-images/500x250 - Mural - Photo by Dakota Corbin on Unsplash.webp"
+                    alt="A picture of a community mural in Provo of two up-reaching hands and the phrase: The Best Gift Is YOU!"
+                    width="500" height="250">
+                <figcaption>Provo Mural - "The Best Gift Is YOU!" - <em>by Dakota Corbin on Unsplash</em></figcaption>
+            </figure>
+            <figure>
+                <img src="images/discover-images/500x500 - Mall - Photo by T M on Unsplash.webp"
+                    alt="An arial picture of the Provo Town Center Mall and surrounding area, with mountains in the distance"
+                    width="500" height="500">
+                <figcaption>Provo Town Center Mall and Surrounding Area - <em>Photo by T M on Unsplash</em></figcaption>
+            </figure>
+            <figure>
+                <img src="images/discover-images/500x250 - Lake - Photo by Chris Briggs on Unsplash.webp"
+                    alt="A Serene fall picture of Utah Lake on an overcast day" width="500" height="250">
+                <figcaption>Utah Lake - <em>Photo by Chris Briggs on Unsplash</em></figcaption>
+            </figure>
+            <figure>
+                <img src="images/discover-images/500x500 - Temple - Photo by Michael Beener on Unsplash.webp"
+                    alt="A picture of the Provo City Center Temple, with vibrant spring flowers in the foreground "
+                    width="500" height="500">
+                <figcaption>Provo City Center Temple - <em>Photo by Michael Beener on Unsplash</em></figcaption>
+            </figure>
+            <figure>
+                <img src="images/discover-images/500x250 - Valley - Photo by Don LaVange Jr. on Unsplash.webp"
+                    alt="A picture of Provo City, as seen from Y mountain on a stormy" width="500" height="250">
+                <figcaption>Arial View of Provo - <em>Photo by Don LaVange Jr. on Unsplash</em></figcaption>
+            </figure>
+            <figure>
+                <img src="images/discover-images/500x500 - Courthouse - Photo by Michael Hart on Unsplash.webp"
+                    alt="A picture of the Provo Courthouse" width="500" height="500">
+                <figcaption>Provo City Courthouse - <em>Photo by Michael Hart on Unsplash</em></figcaption>
+            </figure>
+        </div>
+
+    </main>
+    <footer>
+        <p>©<span id="copyRightYear"></span> • Jennifer Walton • WDD 230 Project Site • Provo, Utah</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+
+</html>
