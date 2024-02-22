@@ -88,6 +88,10 @@ a:active,
     text-decoration: underline;
 }
 
+.active {
+    text-decoration: underline;
+}
+
 #modeButton {
     position: absolute;
     top: .1rem;
@@ -204,16 +208,31 @@ a {
 
 main.discover {
     display: grid;
+    margin-top: 1.5rem;
 }
 
-.discover .sidebar {
+/* .discover .sidebar {
     padding: 0 1rem;
+} */
+
+/* had to add the three following rules and remove the above one to make the card class look good on the side bar */
+.discover .card {
+    padding-top: 0;
+    margin-bottom: 2rem;
 }
 
-.discover .sidebar section {
-    margin-bottom: 8rem 0;
-    /* When I do margin it works but bumps the headings down, when I do margin bottom, it stops working */
+.discover .sidebar h1 {
+    margin-top: 0;
 }
+
+.discover .maincontent h1 {
+    margin-top: 1rem;
+}
+
+/* When I do margin it works but bumps the headings down, when I do margin bottom, it stops working */
+/* .discover .sidebar section {
+    margin-bottom: 8rem 0;
+} */
 
 .discover figure {
     margin: 2rem 6rem;
