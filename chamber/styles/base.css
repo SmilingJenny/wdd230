@@ -215,6 +215,11 @@ main.discover {
     /* When I do margin it works but bumps the headings down, when I do margin bottom, it stops working */
 }
 
+.discover figure:hover {
+    box-shadow: 5px 5px 5px #787676;
+    rotate: .025turn;
+}
+
 .discover figure {
     margin: 2rem 6rem;
     padding: 1rem;
