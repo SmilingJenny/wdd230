@@ -1,0 +1,120 @@
+:root {
+    --main-title-font-slab: 'Josefin Slab', serif;
+    --main-text-font-sans: 'Josefin Sans', sans-serif;
+    --main-background-brown: #764118;
+    --main-background-green: #496314;
+    --main-blue: #205893;
+    --main-hero-pink: #a44887;
+    --main-black: black;
+    --main-white: white;
+    --main-border-grey: lightgray;
+}
+
+header,
+nav,
+main,
+iframe,
+footer {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--main-background-brown);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#profile-pic {
+    padding: 15px;
+    justify-self: right;
+}
+
+h1 {
+    line-height: 1.5;
+    padding-left: 25px;
+    color: var(--main-white);
+    font-family: var(--main-title-font-slab);
+    align-self: center;
+}
+
+#hamButton {
+    display: block;
+    border: none;
+    background: none;
+    padding-left: 2rem;
+}
+
+#hamButton::before {
+    content: "≡";
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#hamButton.show::before {
+    content: "✖";
+    font-size: 2.5rem;
+}
+
+nav {
+    background-color: var(--main-black);
+}
+
+nav ul {
+    display: none;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul.show {
+    display: block;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    display: block;
+    color: var(--main-white);
+    font-family: var(--main-text-font-sans);
+    padding: 5px;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: var(--main-background-brown);
+    color: var(--main-white);
+    font-family: var(--main-title-font-slab);
+    text-align: center;
+    padding: 1px;
+}
