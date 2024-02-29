@@ -45,12 +45,16 @@
     }
 
     main.chamber {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-column-gap: 20px;
     }
 
     .chamber h1 {
-        grid-column: 1/4;
+        grid-column: 1/3;
+    }
+
+    .spotlight {
+        grid-column: 1/3;
     }
 
     main.discover {
