@@ -2,6 +2,15 @@ main {
     display: block;
 }
 
+h2 {
+    border-bottom: none;
+    margin-left: 1rem;
+    font-size: x-large;
+    text-decoration: underline;
+    text-underline-offset: .5em;
+    color: var(--main-background-green);
+}
+
 form {
     margin: 0 auto;
     max-width: 25rem;
