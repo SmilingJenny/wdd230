@@ -7,7 +7,7 @@ rePass.addEventListener("focusout", confirmPass)
 
 function confirmPass() {
     if (rePass.value !== pass.value) {
-        message.innerHTML = "Passwords Didn't Match"
+        message.innerHTML = "Password's Didn't Match"
         pass.style.background = "#fff0f3"
         pass.value = ""
         rePass.value = ""

@@ -1,33 +1,3 @@
-/* :root {
-    --main-title-font-slab: 'Josefin Slab', serif;
-    --main-text-font-sans: 'Josefin Sans', sans-serif;
-    --main-background-brown: #764118;
-    --main-background-green: #496314;
-    --main-blue: #205893;
-    --main-hero-pink: #a44887;
-    --main-black: black;
-    --main-white: white;
-    --main-border-grey: lightgray;
-} */
-
-.card {
-    grid-column: 1/3;
-    width: 100%;
-    max-width: 25rem;
-    margin: 10rem auto;
-    border: 1px solid;
-    border-color: var(--main-border-grey);
-    box-shadow: 5px 5px 5px #f1f1f1;
-}
-
-.card p {
-    padding: 1rem;
-    font-family: var(--main-text-font-sans);
-    font-size:xx-large;
-    text-align: center;
-    color: var(--main-background-green);
-} 
-
 form {
     grid-column: 1/3;
     margin: 0 auto;
@@ -35,31 +5,31 @@ form {
     color: var(--main-background-brown);
 }
 
-form input{
-    width: 100%;
-}
-
 form label {
     display: block;
     margin: 1.5rem 1rem;
+    font-family: var(--main-title-font-slab);
+    font-weight: bold;
+    font-size: large;
 } 
 
 form input {
     display: block;
+    width: 100%;
     margin: .25em 0;
-    padding: .75em;
+    padding: .5em;
+    font-family: var(--main-text-font-sans);
+    font-size: large;
 }
 
 #divMessage {
     display: block;
     margin: 1rem;
     color: red;
-}
+    font-family: var(--main-title-font-slab);
+    font-weight: bold;
+    font-size: large;
 
-#divMessage {
-    display: block;
-    margin: 1rem;
-    color: red;
 }
 
 #ratingLabel {
@@ -68,7 +38,7 @@ form input {
 
 
 #ratingDisplay {
-    margin: 0 1rem;
+    margin: 0 0 0 1rem;
     color: rgb(0, 105, 243);
 }
 
@@ -95,6 +65,24 @@ form input {
     border: none;
     
 }
+
+.card.record {
+    grid-column: 1/3;
+    width: 100%;
+    max-width: 25rem;
+    margin: 10rem auto;
+    border: 1px solid;
+    border-color: var(--main-border-grey);
+    box-shadow: 5px 5px 5px #f1f1f1;
+}
+
+.card.record p {
+    padding: 1rem;
+    font-family: var(--main-text-font-sans);
+    font-size:xx-large;
+    text-align: center;
+    color: var(--main-background-green);
+} 
 
 footer {
     background-color: var(--main-background-brown);
