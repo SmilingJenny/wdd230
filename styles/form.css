@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --main-title-font-slab: 'Josefin Slab', serif;
     --main-text-font-sans: 'Josefin Sans', sans-serif;
     --main-background-brown: #764118;
@@ -8,108 +8,93 @@
     --main-black: black;
     --main-white: white;
     --main-border-grey: lightgray;
+} */
+
+.card {
+    grid-column: 1/3;
+    width: 100%;
+    max-width: 25rem;
+    margin: 10rem auto;
+    border: 1px solid;
+    border-color: var(--main-border-grey);
+    box-shadow: 5px 5px 5px #f1f1f1;
 }
 
-header,
-nav,
-main,
-iframe,
-footer {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-header {
-    background-color: var(--main-background-brown);
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-
-#profile-pic {
-    padding: 15px;
-    justify-self: right;
-}
-
-h1 {
-    line-height: 1.5;
-    padding-left: 25px;
-    color: var(--main-white);
-    font-family: var(--main-title-font-slab);
-    align-self: center;
-}
-
-#hamButton {
-    display: block;
-    border: none;
-    background: none;
-    padding-left: 2rem;
-}
-
-#hamButton::before {
-    content: "≡";
-    font-size: 3rem;
-    font-weight: 600;
-}
-
-#hamButton.show::before {
-    content: "✖";
-    font-size: 2.5rem;
-}
-
-nav {
-    background-color: var(--main-black);
-}
-
-nav ul {
-    display: none;
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-}
-
-nav ul.show {
-    display: block;
-}
-
-nav li {
-    list-style: none;
-}
-
-nav ul a {
-    text-decoration: none;
-    display: block;
-    color: var(--main-white);
+.card p {
+    padding: 1rem;
     font-family: var(--main-text-font-sans);
-    padding: 5px;
+    font-size:xx-large;
+    text-align: center;
+    color: var(--main-background-green);
+} 
+
+form {
+    grid-column: 1/3;
+    margin: 0 auto;
+    max-width: 25rem;
+    color: var(--main-background-brown);
 }
 
-a:hover,
-a:active {
-    text-decoration: underline;
+form input{
+    width: 100%;
+}
+
+form label {
+    display: block;
+    margin: 1.5rem 1rem;
+} 
+
+form input {
+    display: block;
+    margin: .25em 0;
+    padding: .75em;
+}
+
+#divMessage {
+    display: block;
+    margin: 1rem;
+    color: red;
+}
+
+#divMessage {
+    display: block;
+    margin: 1rem;
+    color: red;
+}
+
+#ratingLabel {
+    margin-bottom: .25em;
 }
 
 
+#ratingDisplay {
+    margin: 0 1rem;
+    color: rgb(0, 105, 243);
+}
 
+#rating {
+    margin: 0 0 0 1rem;
+    width: 23rem;
+}
 
+#ratingValues {
+    display: flex;
+    margin: 0 0 0 1.75em;
+    width: 24.75em;
+}
 
+#ratingValues option {
+    flex: 1 1 auto;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#submitBtn {
+    width: 25rem;
+    background-color: var(--main-background-green);
+    color: var(--main-white);
+    font-size: large;
+    border: none;
+    
+}
 
 footer {
     background-color: var(--main-background-brown);
