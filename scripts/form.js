@@ -6,17 +6,13 @@ const message = document.querySelector("#divMessage")
 rePass.addEventListener("focusout", confirmPass)
 
 function confirmPass() {
-    console.log(pass.value)
-    console.log(rePass.value)
     if (rePass.value !== pass.value) {
         message.innerHTML = "Password's Didn't Match"
-        pass.style.background = "#fff0f3"
         pass.value = ""
         rePass.value = ""
         pass.focus()
     } else {
         message.innerHTML = ""
-        pass.style.background = "none"
     }
 }
 
