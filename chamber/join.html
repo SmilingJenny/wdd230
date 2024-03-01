@@ -20,7 +20,8 @@
     <link rel="icon" href="logo-wbg-favicon/favicon-16x16.png" type="image/png">
     <meta property="og:title" content="Provo Chamber of Commerce Membership Page">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://smilingjenny.github.io/wdd230/chamber/images/1500x750-mountains-pic.webp">
+    <meta property="og:image"
+        content="https://smilingjenny.github.io/wdd230/chamber/images/1500x750-mountains-pic.webp">
     <!-- verify url -->
     <meta property="og:url" content="https://smilingjenny.github.io/wdd230/chamber/join">
 </head>
@@ -41,24 +42,74 @@
         <button id="joinButton" aria-label="Join Us button.">Join Us</button>
         <button id="modeButton" aria-label="Dark mode button."></button>
     </header>
-    <main class="chamber">
-        <h1>Join Provo's Chamber of Commerce</h1>
-        <table>
-        </table>
+    <main class="join">
+        <h1 class="join">Join Provo's Chamber of Commerce</h1>
+        <section class="card join">
+            <h2 id="benefits">Membership Level Benefits</h2>
+            <!-- does the table need a title? -->
+            <table title="Membership Levels">
+                <tr>
+                    <th scope="col">Membership Levels</th>
+                    <th scope="col">Benefits</th>
+                    <th scope="col">Cost</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>Benefits</td>
+                    <td>Cost</td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>Benefits</td>
+                    <td>Cost</td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>Benefits</td>
+                    <td>Cost</td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>Benefits</td>
+                    <td>Cost</td>
+                </tr>
+            </table>
+        </section>
+
         <form method="get" action="thankyou.html">
-            <label><input id="" name="" pattern="" placeholder="" required></label>
-            <label><input id="" name="" pattern="" placeholder="" required></label>
-            <label><input id="" name="" pattern="" placeholder="" required></label>
-            <label><input id="" name="" pattern="" placeholder="" required></label>
-            <label><input id="" name="" pattern="" placeholder="" required></label>
-            <label><input id="" name="" pattern="" placeholder="" required></label>
-            <label><input id="" name="" pattern="" placeholder="" required></label>
-            <label><input id="" name="" pattern="" placeholder="" required></label>
-            <label><input id="" name="" pattern="" placeholder="" required></label>
-            <label><input id="" name="" pattern="" placeholder="" required></label>
+            <h2 id="form">Become a Member</h2>
+            <label>First Name<input type="text" id="fname" name="fname" required></label>
+            <label>Last Name<input type="text" id="lname" name="lname" required></label>
+            <label>Title or Position in Organization<input type="text" id="org-position" name="org-position"
+                    pattern="[A-Za-z\-\s]{7,}"
+                    title="Please enter a valid description with only Alpha characters, hyphens, and spaces"
+                    required></label>
+            <label>Email <Address></Address><input type="email" id="email" name="email" pattern=""
+                    placeholder="ex. org-contact@gamil.com" required></label>
+            <label>Mobile Phone Number<input type="tel" id="phone" name="phone" required></label>
+            <label>Business or Organization Name<input type="text" id="org-name" name="org-name" required></label>
+            <fieldset>
+                <legend>Membership Level</legend>
+                <!-- <div role="group" aria-label="radio-group"> -->
+                <label class="radio"><input type="radio" id="np" name="level" value="np">NP Membership (for non profit
+                    organizations) - no fee.</label>
+                <label class="radio"><input type="radio" id="bronze" name="level" value="bronze">Bronze
+                    Membership</label>
+                <label class="radio"><input type="radio" id="silver" name="level" value="silver">Silver
+                    Membership</label>
+                <label class="radio gold"><input type="radio" id="gold" name="level" value="gold">Gold Membership</label>
+                <!-- </div> -->
+            </fieldset>
+
+            <!-- text area? -->
+            <label>Business or Organization description<textarea id="description" name="description" rows="6"
+                    cols="40"></textarea></label>
+            <label><input type="hidden" id="date" name="date"></label>
+            <!-- Use button or submit -->
+            <label><input type="submit" id="submit" name="submit" pattern="" placeholder="" required></label>
 
         </form>
-        
+
     </main>
     <footer>
         <p>©<span id="copyRightYear"></span> • Jennifer Walton • WDD 230 Project Site • Provo, Utah</p>

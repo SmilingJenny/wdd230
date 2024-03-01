@@ -261,6 +261,79 @@ main.discover {
     display: inline-block;
 }
 
+main.join {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+h1.join {
+    grid-column: 1/3;
+    text-decoration: underline;
+    text-underline-offset: .5em;
+}
+
+.join h2 {
+    font-family: var(--main-text-font);
+    text-align: center;
+}
+
+/*I might remove section if I don't want the border causing more visual weight. Or, I could wrap the form in a section with card to make them the same*/
+section.join {
+    padding-top: .95rem;
+    /* can't get the table to center? */
+    /* justify-content: center; */
+}
+
+/* .join table {
+    display: block;
+    justify-self: center;
+    text-align: center;
+} */
+
+.join h2#form {
+    margin-top: 2rem;
+    justify-self: center;
+}
+
+form label {
+    margin: 1rem 0;
+}
+
+form label,
+form>label input,
+form textarea {
+    display: block;
+}
+
+form>label input,
+form textarea,
+form fieldset {
+    margin-top: .15em;
+    padding: .75em;
+    width: 95%;
+    max-width: 40rem;
+}
+
+fieldset {
+    border:1px solid #D2691E;
+}
+
+legend {
+    padding: 0 .5em;
+}
+
+label.radio input {
+    margin-right: 1em;
+    /* Don't seem to need anymore width: auto; */
+}
+
+.gold {
+    color: var(--main-blue);
+}
+
 footer {
     margin-top: 2rem;
     background-color: var(--main-blue);
