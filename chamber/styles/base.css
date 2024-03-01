@@ -182,6 +182,20 @@ h1 {
     font-family: var(--main-text-font);
 }
 
+.card.thankyou {
+    margin: 4rem 2rem;
+    padding: 2rem;
+    font-family: var(--main-text-font);
+    font-size: x-large;
+    text-align: center;
+    border: 1px dashed var(--main-orange);
+}
+
+.card.thankyou p {
+    margin: 1em;
+    line-height: 1.5em;
+}
+
 .darkMode .card {
     box-shadow: none;
 }
