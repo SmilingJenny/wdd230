@@ -278,7 +278,7 @@ main.join {
 }
 
 div.levels {
-    padding: 2rem 0;
+    padding: 1rem 0;
     border-bottom: 1px dashed var(--main-orange);
 }
 
@@ -300,30 +300,32 @@ div.levels>p:first-of-type {
     color: var(--main-charcoal-black);
 }
 
-div.benefits-container {
-    /* column-count: 1; */
+div.levels>div {
     padding: 0 1em;
     line-height: 1.5em;
     margin-top: .25em;
 }
 
-div.benefits-container span::before {
+div.levels div p.yes span::before {
     content: "✔ ";
     color: var(--main-orange);
 }
 
-/* div.benefits-container p::before {
-    content: &nbsp ;
-    color: var(--main-orange);
-} */
+div.levels div p.no span::before {
+    content: "X ";
+}
+
+div.levels div p.no {
+    color: rgba(0, 0, 0, 0.6);
+}
 
 .join h2#form {
     margin-top: 2rem;
 }
 
-/* form {
+form {
     padding: 0 1rem 1rem 1rem;
-} */
+}
 
 form label {
     margin: 1rem 0;
