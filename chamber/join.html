@@ -45,39 +45,63 @@
     <main class="join">
         <h1 class="join">Join Provo's Chamber of Commerce</h1>
         <section class="card join">
-            <h2 id="benefits">Membership Level Benefits</h2>
-            <!-- does the table need a title? -->
-            <table title="Membership Levels">
-                <tr>
-                    <th scope="col">Membership Levels</th>
-                    <th scope="col">Benefits</th>
-                    <th scope="col">Cost</th>
-                </tr>
-                <tr>
-                    <td>Name</td>
-                    <td>Benefits</td>
-                    <td>Cost</td>
-                </tr>
-                <tr>
-                    <td>Name</td>
-                    <td>Benefits</td>
-                    <td>Cost</td>
-                </tr>
-                <tr>
-                    <td>Name</td>
-                    <td>Benefits</td>
-                    <td>Cost</td>
-                </tr>
-                <tr>
-                    <td>Name</td>
-                    <td>Benefits</td>
-                    <td>Cost</td>
-                </tr>
-            </table>
+            <h2>Membership Levels</h2>
+            <div class="levels" role="group" aria-label="Membership levels">
+                <h3 class="levels-labels">NP Membership - For Non-Profit Organizations</h3>
+                <h4 class="cost">Free</h4>
+                <p>Per Year</p>
+                <br>
+                <h4 class="benefits">Benefits</h4>
+                <div class="benefits-container" role="container for columns" aria-label="container for styling benefits into columns">
+                    <!-- <div><span>✔</span><p>Chamber Membership Status</p></div>
+                    <div><span>✔</span><p>Chamber Membership Status</p></div> -->
+                    <p><span>&nbsp </span>Chamber Membership Status</p>
+                    <p><span>&nbsp </span>Chamber Directory Access</p>
+                    <p><span>&nbsp </span>Chamber Calendar Access</p>
+                    <p><span>&nbsp </span>Member Events Pricing</p>
+                    <p><span>&nbsp </span>Member Only Events - Networking, Professional Development, and Workshops</p>
+                    <p><span>&nbsp </span>Member Only Discounts</p>
+                    <p><span>&nbsp </span>Chamber Advertising Spotlights on Chamber Site and Socials</p>
+                    <p><span>&nbsp </span>Invitation to Chamber Committees</p>
+                    <p><span>&nbsp </span>Seat on Chamber Board of Directors</p>
+                </div>
+
+            </div>
+
+            <div class="levels" role="group" aria-label="Membership levels">
+                <h3 class="levels-labels">Bronze Membership</h3>
+                <h4 class="cost">$1,500</h4>
+                <p>Per Year</p>
+                <br>
+                <h4 class="benefits">Benefits</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem delectus rerum natus nemo. Minima
+                    officia molestiae delectus earum, modi ducimus laudantium reprehenderit corporis ab sit, ut ad repellat
+                    porro! Accusamus.</p>
+            </div>
+            <div class="levels" role="group" aria-label="Membership levels">
+                <h3 class="levels-labels">Silver Membership</h3>
+                <h4 class="cost">$3,000</h4>
+                <p>Per Year</p>
+                <br>
+                <h4 class="benefits">Benefits</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem delectus rerum natus nemo. Minima
+                    officia molestiae delectus earum, modi ducimus laudantium reprehenderit corporis ab sit, ut ad repellat
+                    porro! Accusamus.</p>
+            </div>
+            <div class="levels" role="group" aria-label="Membership levels">
+                <h3 class="levels-labels">Gold Membership</h3>
+                <h4 class="cost">$5,000</h4>
+                <p>Per Year</p>
+                <br>
+                <h4 class="benefits">Benefits</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem delectus rerum natus nemo. Minima
+                    officia molestiae delectus earum, modi ducimus laudantium reprehenderit corporis ab sit, ut ad repellat
+                    porro! Accusamus.</p>
+            </div>
         </section>
 
         <form method="get" action="thankyou.html">
-            <h2 id="form">Become a Member</h2>
+            <h2 id="form">Membership Application</h2>
             <label>First Name<input type="text" id="fname" name="fname" required></label>
             <label>Last Name<input type="text" id="lname" name="lname" required></label>
             <label>Title or Position in Organization<input type="text" id="org-position" name="org-position"
@@ -85,7 +109,7 @@
                     title="Please enter a valid description with only Alpha characters, hyphens, and spaces"
                     required></label>
             <label>Email <Address></Address><input type="email" id="email" name="email" pattern=""
-                    placeholder="ex. org-contact@gamil.com" required></label>
+                    placeholder="ex. Contact@gmail.com" required></label>
             <label>Mobile Phone Number<input type="tel" id="phone" name="phone" required></label>
             <label>Business or Organization Name<input type="text" id="org-name" name="org-name" required></label>
             <fieldset>
@@ -97,16 +121,19 @@
                     Membership</label>
                 <label class="radio"><input type="radio" id="silver" name="level" value="silver">Silver
                     Membership</label>
-                <label class="radio gold"><input type="radio" id="gold" name="level" value="gold">Gold Membership</label>
+                <label class="radio"><input type="radio" id="gold" name="level" value="gold">Gold
+                    Membership</label>
                 <!-- </div> -->
             </fieldset>
 
             <!-- text area? -->
             <label>Business or Organization description<textarea id="description" name="description" rows="6"
                     cols="40"></textarea></label>
+
             <label><input type="hidden" id="date" name="date"></label>
+
             <!-- Use button or submit -->
-            <label><input type="submit" id="submit" name="submit" pattern="" placeholder="" required></label>
+            <label><input type="submit" id="submit" name="submit" value="Become a Member"></label>
 
         </form>
 

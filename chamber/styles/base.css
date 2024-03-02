@@ -230,8 +230,6 @@ main.discover {
 }
 
 .discover h1 {
-    margin: 1rem;
-    grid-column: 1/3;
     text-align: center;
     color: var(--main-blue);
 }
@@ -262,17 +260,16 @@ main.discover {
 }
 
 main.join {
-    margin: 0 auto;
-    max-width: 1000px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
 }
 
-h1.join {
-    grid-column: 1/3;
+.join h1 {
+    margin: 1rem;
     text-decoration: underline;
     text-underline-offset: .5em;
+    line-height: 1.75em;
 }
 
 .join h2 {
@@ -280,23 +277,53 @@ h1.join {
     text-align: center;
 }
 
-/*I might remove section if I don't want the border causing more visual weight. Or, I could wrap the form in a section with card to make them the same*/
-section.join {
-    padding-top: .95rem;
-    /* can't get the table to center? */
-    /* justify-content: center; */
+div.levels {
+    padding: 2rem 0;
+    border-bottom: 1px dashed var(--main-orange);
 }
 
-/* .join table {
-    display: block;
-    justify-self: center;
-    text-align: center;
+div.levels:last-child {
+    border-bottom: none;
+}
+
+h3.levels-labels,
+h4.benefits {
+    color: var(--main-blue);
+}
+
+h4.cost {
+    color: var(--main-orange);
+}
+
+div.levels>p:first-of-type {
+    font-size: smaller;
+    color: var(--main-charcoal-black);
+}
+
+div.benefits-container {
+    /* column-count: 1; */
+    padding: 0 1em;
+    line-height: 1.5em;
+    margin-top: .25em;
+}
+
+div.benefits-container span::before {
+    content: "✔ ";
+    color: var(--main-orange);
+}
+
+/* div.benefits-container p::before {
+    content: &nbsp ;
+    color: var(--main-orange);
 } */
 
 .join h2#form {
     margin-top: 2rem;
-    justify-self: center;
 }
+
+/* form {
+    padding: 0 1rem 1rem 1rem;
+} */
 
 form label {
     margin: 1rem 0;
@@ -313,16 +340,25 @@ form textarea,
 form fieldset {
     margin-top: .15em;
     padding: .75em;
-    width: 95%;
+    width: 100%;
     max-width: 40rem;
 }
 
+form label {
+    font-family: var(--main-text-font);
+}
+
 fieldset {
-    border:1px solid #D2691E;
+    border: 1px solid #D2691E;
 }
 
 legend {
     padding: 0 .5em;
+    font-family: var(--main-text-font);
+}
+
+textarea {
+    resize: none;
 }
 
 label.radio input {
@@ -330,8 +366,17 @@ label.radio input {
     /* Don't seem to need anymore width: auto; */
 }
 
-.gold {
+label.radio:last-child {
     color: var(--main-blue);
+}
+
+input#submit {
+    color: var(--main-white);
+    background-color: var(--main-orange);
+    border: 1px solid lightgrey;
+    /* box-shadow: 3px 3px 3px #f1f1f1; */
+    box-shadow: 3px 3px 3px #d8d8d8;
+    font-size: large;
 }
 
 footer {
