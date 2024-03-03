@@ -78,8 +78,6 @@
 
     .discover figure:hover {
         box-shadow: 5px 5px 5px #787676;
-        /* Cool, but validation didn't like it */
-        /* rotate: .025turn; */
     }
 
     main.join {

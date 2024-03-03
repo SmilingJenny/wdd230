@@ -365,7 +365,6 @@ textarea {
 
 label.radio input {
     margin-right: 1em;
-    /* Don't seem to need anymore width: auto; */
 }
 
 label.radio:last-child {
