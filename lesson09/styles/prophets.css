@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 3em;
+    color: navy;
+}
+
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 1em;
+    margin: 2em;
+    padding: 2em;
+    background-color: lightgrey;
+    box-shadow: 0 0 2em #777;
+}
+
+#cards section {
+    padding: 2em;
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    justify-self: center;
+}
+
+h2 {
+    color: navy;
+    font-family: "Playfair Display", serif;
+}
+
+p {
+    font-family: "Work Sans", sans-serif;;
+}
+
+#cards section img {
+    margin-top: 1em;
+    box-shadow: 0 0 2em #777;
+}
+
+footer {
+    margin: 2em;
+    color: navy;
+    font-family: "Work Sans", sans-serif;
+    font-size: large;
+    text-align: center;
+}
