@@ -1,35 +1,35 @@
-{   
-    "newMemberInformation" : {
-    "surname": "Walton",
-    "dateMovedIn": "5/20/2016",
-    "numOfFamilyMembers": 5,
-    "visitedByBishopric": true,
-    "familyMembers": [
-        {
-            "name": "Alan Walton",
-            "gender": "Male",
-            "birthdate": "1986-01-22"
-        }, 
-        {
-            "name": "Jennifer Walton",
-            "gender": "Female",
-            "birthdate": "1989-05-22"
-        }, 
-        {
-            "name": "Elizabeth Walton",
-            "gender": "Female",
-            "birthdate": "2009-02-06"
-        }, 
-        {
-            "name": "Joseph Walton",
-            "gender": "Male",
-            "birthdate": "2011-11-06"
-        },
-        {
-            "name": "Katara Walton",
-            "gender": "Female",
-            "birthdate": "2015-03-22"
-        }
-    ]
+{
+    "newMemberInformation": {
+        "surname": "Walton",
+        "dateMovedIn": "5/20/2016",
+        "numOfFamilyMembers": 5,
+        "visitedByBishopric": true,
+        "familyMembers": [
+            {
+                "name": "Alan Walton",
+                "gender": "Male",
+                "birthdate": "1986-01-22"
+            },
+            {
+                "name": "Jennifer Walton",
+                "gender": "Female",
+                "birthdate": "1989-05-22"
+            },
+            {
+                "name": "Elizabeth Walton",
+                "gender": "Female",
+                "birthdate": "2009-02-06"
+            },
+            {
+                "name": "Joseph Walton",
+                "gender": "Male",
+                "birthdate": "2011-11-06"
+            },
+            {
+                "name": "Katara Walton",
+                "gender": "Female",
+                "birthdate": "2015-03-22"
+            }
+        ]
     }
 }
