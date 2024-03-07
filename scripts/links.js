@@ -1,4 +1,5 @@
-const baseURL = "https://smilingjenny.github.io/wdd230/"
+// Commented out because not needed but was in instructions
+// const baseURL = "https://smilingjenny.github.io/wdd230/"
 const linksURL = "https://smilingjenny.github.io/wdd230/data/links.json"
 const learningLinksList = document.querySelector("#learning-links")
 
@@ -15,17 +16,17 @@ const displayLinks = (weeks) => {
         week.links.forEach((object) => {
             let link = document.createElement("li")
             let anchor = document.createElement("a")
-    
+
             anchor.setAttribute("href", object.url)
             // Alt version:
             // anchor.setAttribute("href", week["links"][0]["url"])
-    
+
             // Old version:
             //  anchor.setAttribute("href", week.links.url)
-            
+
             anchor.setAttribute("target", "_blank")
-            anchor.textContent = `${week.lesson} - ${object.title}`   
-            link.innerHTML = anchor
+            anchor.textContent = `${week.lesson} - ${object.title}`
+            link.appendChild(anchor)
             learningLinksList.appendChild(link)
         });
     })
