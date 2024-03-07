@@ -5,7 +5,6 @@ const learningLinksList = document.querySelector("#learning-links")
 async function getLinks() {
     const response = await fetch(linksURL)
     const data = await response.json()
-    // console.log(data)
     displayLinks(data.lessons)
 }
 
@@ -16,10 +15,17 @@ const displayLinks = (weeks) => {
         let link = document.createElement("li")
         let anchor = document.createElement("a")
 
-        anchor.setAttribute("href", week.links.url)
+        anchor.setAttribute("href", week.links[0].url)
+        // Alt version:
+        // anchor.setAttribute("href", week["links"][0]["url"])
+
+        // Old version:
+        //  anchor.setAttribute("href", week.links.url)
+        
         anchor.setAttribute("target", "_blank")
-        anchor.textContent = `${week.lesson} - ${week.links.title}`
+        anchor.textContent = `${week.lesson} - ${week.links[0].title}`
         // console.log(anchor)
+
         link.innerHTML = anchor
         learningLinksList.appendChild(link)
     })
