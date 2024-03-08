@@ -84,6 +84,14 @@
         box-shadow: 5px 5px 5px #787676;
     }
 
+    #submit:hover{
+        font-size: x-large;
+        height: 51px;
+        padding: .25em 0;
+        border: 1px solid grey;
+        box-shadow: 3px 3px 3px #b2b2b2;
+    }
+
     main.join {
         grid-template-columns: 1fr 1fr;
         gap: 3rem;
