@@ -225,6 +225,7 @@ a {
 }
 
 main.discover {
+    display: grid;
     margin-top: 1.5rem;
 }
 
@@ -247,7 +248,7 @@ main.discover {
 
 
 .discover figure {
-    margin: 2rem 6rem;
+    margin: 2rem 0;
     padding: 1rem;
     text-align: center;
     background-color: var(--main-blue);
@@ -258,10 +259,16 @@ main.discover {
     display: inline-block;
 }
 
+.discover img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
 main.join {
+    display: grid;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    display: grid;
 }
 
 .join h1 {

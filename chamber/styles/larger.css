@@ -76,6 +76,10 @@
         grid-column: 2/3;
     }
 
+    .discover figure {
+        margin: 2rem 6rem;
+    }
+
     .discover figure:hover {
         box-shadow: 5px 5px 5px #787676;
     }
