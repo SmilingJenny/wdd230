@@ -151,6 +151,7 @@ a:active,
 }
 
 #heroImage {
+    margin-top: 1.5rem;
     text-align: center;
 }
 
@@ -160,13 +161,22 @@ a:active,
 }
 
 main.chamber {
+    margin-top: 0;
+}
+
+main {
     display: grid;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 h1 {
-    text-align: center;
     font-family: var(--main-title-font);
     color: var(--main-blue);
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: .5em;
+    line-height: 1.75em;
 }
 
 .darkMode h1 {
@@ -224,16 +234,6 @@ a {
     color: var(--main-blue);
 }
 
-main.discover {
-    display: grid;
-    margin-top: 1.5rem;
-}
-
-.discover h1 {
-    text-align: center;
-    color: var(--main-blue);
-}
-
 .discover .card {
     padding-top: 0;
     margin-bottom: 2rem;
@@ -245,7 +245,6 @@ main.discover {
     color: var(--main-orange);
     font-family: var(--main-text-font);
 }
-
 
 .discover figure {
     margin: 2rem 0;
@@ -263,19 +262,6 @@ main.discover {
     width: 100%;
     height: auto;
     max-width: 500px;
-}
-
-main.join {
-    display: grid;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.join h1 {
-    margin: 1rem;
-    text-decoration: underline;
-    text-underline-offset: .5em;
-    line-height: 1.75em;
 }
 
 .join h2 {
