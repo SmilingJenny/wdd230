@@ -6,3 +6,9 @@ hamButton.addEventListener("click", () => {
     mainNavBar.classList.toggle("show")
 });
 
+
+const joinButton = document.querySelector("#joinButton")
+
+joinButton.addEventListener("click", () => {
+    window.location.href="join.html"
+})
