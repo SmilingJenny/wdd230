@@ -1,14 +1,24 @@
 {
     "members": [
         {
-            "name": "",
-            "address": "",
-            "phoneNumber": ,
-            "websiteURL": "",
-            "logoFile": "",
-            "membershipLevel": "",
-            "membershipYears": "",
-            "industry": ""
+            "name": "Business One",
+            "address": "123 Apple St.",
+            "phoneNumber": "555-555-555",
+            "websiteURL": "domain.com",
+            "logoFile": "https://placebear.com/50/75",
+            "membershipLevel": "Gold",
+            "membershipYears": "5 Years",
+            "industry": "Technology"
+        },
+        {
+            "name": "Business Two",
+            "address": "123 Cherry Ln.",
+            "phoneNumber": "555-555-555",
+            "websiteURL": "domain.com",
+            "logoFile": "https://placebear.com/50/75",
+            "membershipLevel": "Gold",
+            "membershipYears": "1 Years",
+            "industry": "Food"
         }
     ]
 }
