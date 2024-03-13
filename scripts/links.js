@@ -18,12 +18,6 @@ const displayLinks = (weeks) => {
             let anchor = document.createElement("a")
 
             anchor.setAttribute("href", object.url)
-            // Alt version:
-            // anchor.setAttribute("href", week["links"][0]["url"])
-
-            // Old version:
-            //  anchor.setAttribute("href", week.links.url)
-
             anchor.setAttribute("target", "_blank")
             anchor.textContent = `${week.lesson} - ${object.title}`
             link.appendChild(anchor)
