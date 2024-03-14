@@ -151,31 +151,17 @@ h3 {
     color: var(--main-blue);
 }
 
-#information p:first-of-type {
-    /* text-align: center; */
+#information p:nth-of-type(2) {
+    margin-bottom: 0;
 } 
 
 #curr-temp {  
     color: var(--main-hero-pink);
 }
 
-/* figure {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-
-figure img {
-    justify-self: center ;
-}
-
-figcaption {
-    color: var(--main-blue);
-    justify-self: start;
-    align-self: center;
-} */
-
 figure {
     display: grid;
+    margin-top: 0;
 }
 
 figure img {
