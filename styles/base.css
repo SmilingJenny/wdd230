@@ -151,16 +151,48 @@ h3 {
     color: var(--main-blue);
 }
 
-/* #information {  
+#information p:first-of-type {
+    /* text-align: center; */
+} 
+
+#curr-temp {  
+    color: var(--main-hero-pink);
+}
+
+/* figure {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+figure img {
+    justify-self: center ;
+}
+
+figcaption {
+    color: var(--main-blue);
+    justify-self: start;
+    align-self: center;
 } */
 
+figure {
+    display: grid;
+}
+
+figure img {
+    justify-self: center ;
+}
+
+figcaption {
+    color: var(--main-blue);
+    text-align: center;
+}
+
 .label {
-    /* font-family: var(--main-title-font); */
     font-weight: bold;
 }
 
 .visits {
-    color: var(--main-blue);
+    color: var(--main-hero-pink);
 }
 
 iframe {

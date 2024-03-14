@@ -8,7 +8,7 @@ async function apiFetch() {
     try {
         const response = await fetch(url)
         if (response.ok) {
-            const data = await response.json()  
+            const data = await response.json()
             displayResults(data)
         } else {
             throw Error(await response.text())
@@ -26,7 +26,7 @@ function displayResults(data) {
     const iconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
     let desc = data.weather[0].description
     let capDesc = titleCase(desc)
-    
+
     weatherIcon.setAttribute("src", iconSrc)
     weatherIcon.setAttribute("alt", "Weather icon")
     captionDesc.textContent = capDesc
@@ -34,7 +34,7 @@ function displayResults(data) {
 }
 
 function titleCase(desc) {
-    return desc.replace(/\b\w/g, function(char) {
+    return desc.replace(/\b\w/g, function (char) {
         return char.toUpperCase()
     })
 }
