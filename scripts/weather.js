@@ -31,7 +31,7 @@ function displayResults(data) {
     humidity.innerHTML = `${humRounded}&deg;F`
     icon.setAttribute("src", iconSrc)
     icon.setAttribute("alt", "Weather icon")
-    description.innerHTML = `Weather Description: <br>${capDesc}`   
+    description.innerHTML = `Current Weather Conditions: <br>${capDesc}`   
 }
 
 function titleCase(desc) {
