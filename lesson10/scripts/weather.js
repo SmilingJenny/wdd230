@@ -29,7 +29,7 @@ function displayResults(data) {
     
     weatherIcon.setAttribute("src", iconSrc)
     weatherIcon.setAttribute("alt", "Weather icon")
-    captionDesc.textContent = `${capDesc}`
+    captionDesc.textContent = capDesc
 
 }
 
