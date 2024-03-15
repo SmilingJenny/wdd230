@@ -64,8 +64,15 @@
         </section>
         <section class="card">
             <h2>Weather</h2>
-            <p>The current temperature in Provo, UT is <span id="temp">43</span>°F with wind speed of <span
-                    id="wind">8</span> MPH and windchill of <span id="chill"></span>°F.</p>
+            <p>The current temperature in Provo, UT is <span id="temp"></span>&deg;F with wind speed of <span
+                    id="wind"></span> MPH and windchill of <span id="chill"></span>&deg;F.</p>
+            <figure>
+                <img id="icon" src="" alt="">
+                <figcaption id="description"></figcaption>
+            </figure>
+            <br>
+            <p>The 3 Day Forecast for Provo is: <span id="forecast"></span></p>
+            <p><span id="day1Date"></span><span id="day1Temp"></span><span id="day1Icon"></span><span id="day1Desc"></span></p>
         </section>
         <section class="card spotlight">
             <h2>Company Spotlights</h2>
@@ -79,7 +86,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/scripts.js"></script>
     <script src="scripts/darkmode.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
