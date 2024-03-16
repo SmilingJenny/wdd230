@@ -18,20 +18,23 @@ weatherData()
 function displayWeather(data) {
     const temp = document.getElementById("temp")
     const wind = document.getElementById("wind")
-    const icon = document.getElementById("icon")
-    const description = document.getElementById("description")
+    const iconFig = document.getElementById("iconFig")
+
     const tempRound = Math.round(data.main.temp)
     const windRound = Math.round(data.wind.speed)
-    const iconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
+    const iconImg = document.createElement("img")
+    const iconImgSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
+    const iconCaption = document.createElement("figcaption")
     const desc = data.weather[0].description
     const capDesc = titleCase(desc)
     
-    
     temp.textContent = tempRound
     wind.textContent = windRound
-    icon.setAttribute("src", iconSrc)
-    icon.setAttribute("alt", "Weather Icon")
-    description.innerHTML = `Current Weather Condition: <br>${capDesc}`
+    iconImg.setAttribute("src", iconImgSrc)
+    iconImg.setAttribute("alt", "Weather Icon")
+    iconFig.appendChild(iconImg)
+    iconCaption.innerHTML = `Current Weather Condition: <br>${capDesc}`
+    iconFig.appendChild(iconCaption)
     windChill(temp.textContent, wind.textContent)
 }
 
