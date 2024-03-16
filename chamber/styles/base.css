@@ -206,6 +206,12 @@ h1 {
     line-height: 1.5em;
 }
 
+#forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+}
+
 .darkMode .card {
     box-shadow: none;
 }

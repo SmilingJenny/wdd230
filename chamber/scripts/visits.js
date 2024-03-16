@@ -23,6 +23,7 @@ function daysBetweenVisits() {
         } else {
             visitsDisplay.textContent = `You last visited ${daysSince.toFixed(0)} days ago.`
         }
+        
         localStorage.setItem("visit", JSON.stringify(date))
     } else {
         visitsDisplay.textContent = "Welcome! Let us know if you have any questions."
