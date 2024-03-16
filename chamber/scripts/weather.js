@@ -73,12 +73,6 @@ async function forecastData() {
 }
 forecastData()
 
-// const forecast = document.getElementById("forecast")
-// const dayPara = createElement("p")
-// const dayPara = createElement("p")
-// const tempPara = 
-// forecast.appendChild
-
 function displayForecast(data) {
     // day 1
     const day1Date = document.getElementById("day1Date")
