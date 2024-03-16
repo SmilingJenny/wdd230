@@ -15,6 +15,7 @@
 }
 
 header,
+#meetingBanner,
 #heroImage,
 main,
 footer {
@@ -205,6 +206,57 @@ h1 {
     margin: 1em;
     line-height: 1.5em;
 }
+
+#meetingBanner {
+    position: relative;
+    text-align: center;
+    margin: 1rem auto 0 auto;
+    border: 1px dashed var(--main-charcoal-black);
+}
+
+section#meetingBanner.show {
+    display: block;
+}
+
+section#meetingBanner.close {
+    display: none;
+}
+
+#meetingBanner h2 {
+    margin-bottom: .5rem;
+}
+
+#meetingBanBtn {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    display: block;
+    background-color: transparent;
+    border-color: transparent;    
+    color: var(--main-blue);
+}
+
+#meetingBanBtn::before {
+    content: "✖";
+    font-size: 1.25rem;
+    font-weight: small;
+}
+
+#meetingBanBtn:hover,
+#meetingBanBtn:active {
+    color: var(--main-charcoal-black);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 #forecast {
     display: grid;
