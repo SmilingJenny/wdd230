@@ -23,9 +23,8 @@ function displayWeather(data) {
     const tempRound = Math.round(data.main.temp)
     const windRound = Math.round(data.wind.speed)
     const iconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
-    // change to const
-    let desc = data.weather[0].description
-    let capDesc = titleCase(desc)
+    const desc = data.weather[0].description
+    const capDesc = titleCase(desc)
     
     
     temp.textContent = tempRound
