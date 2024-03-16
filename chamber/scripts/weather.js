@@ -61,8 +61,6 @@ async function forecastData() {
         const response = await fetch(urlForecast)
         if (response.ok) {
             const data = await response.json()
-            // remove console logs when done
-            console.log(data)
             displayForecast(data)
         } else {
             throw Error(response.text())
