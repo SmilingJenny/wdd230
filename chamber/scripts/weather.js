@@ -131,16 +131,3 @@ function displayForecast(data) {
     day3Temp.innerHTML = `${tempRound3}&deg;F`
     day3Desc.textContent = capDesc3
 }
-
-
-
-
-
-
-
-
-
-// const day1Icon = document.getElementById("day1Date")
-// const iconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
-// icon.setAttribute("src", iconSrc)
-// icon.setAttribute("alt", "Weather Icon")
