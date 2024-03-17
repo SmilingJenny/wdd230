@@ -2,10 +2,10 @@
     "members": [
         {
             "name": "Business One",
-            "address": "123 Apple St.",
+            "address": "123 Apple Ave.",
             "phoneNumber": "555-555-555",
             "websiteURL": "domain.com",
-            "logoFile": "https://github.com/SmilingJenny/wdd230/blob/main/chamber/images/member-logos/logoipsum.webp",
+            "logoFile": "https://placebear.com/50/75",
             "membershipLevel": "Gold",
             "membershipYears": "5 Years",
             "industry": "Technology"
@@ -19,6 +19,76 @@
             "membershipLevel": "Gold",
             "membershipYears": "1 Years",
             "industry": "Food"
+        },
+        {
+            "name": "Business Three",
+            "address": "123 Briar St.",
+            "phoneNumber": "555-555-555",
+            "websiteURL": "domain.com",
+            "logoFile": "https://placebear.com/50/75",
+            "membershipLevel": "Silver",
+            "membershipYears": "7 Years",
+            "industry": "Social"
+        },
+        {
+            "name": "Business Four",
+            "address": "123 Peach Ave.",
+            "phoneNumber": "555-555-555",
+            "websiteURL": "domain.com",
+            "logoFile": "https://placebear.com/50/75",
+            "membershipLevel": "Non-Profit",
+            "membershipYears": "4 Years",
+            "industry": "Business"
+        },
+        {
+            "name": "Business Five",
+            "address": "123 Birch Ln.",
+            "phoneNumber": "555-555-555",
+            "websiteURL": "domain.com",
+            "logoFile": "https://placebear.com/50/75",
+            "membershipLevel": "Bronze",
+            "membershipYears": "2 Years",
+            "industry": "Technology"
+        },
+        {
+            "name": "Business Six",
+            "address": "123 Aspen St.",
+            "phoneNumber": "555-555-555",
+            "websiteURL": "domain.com",
+            "logoFile": "https://placebear.com/50/75",
+            "membershipLevel": "Silver",
+            "membershipYears": "6 Years",
+            "industry": "Business"
+        },
+        {
+            "name": "Business Seven",
+            "address": "123 Locust Ave.",
+            "phoneNumber": "555-555-555",
+            "websiteURL": "domain.com",
+            "logoFile": "https://placebear.com/50/75",
+            "membershipLevel": "Gold",
+            "membershipYears": "5 Years",
+            "industry": "Food"
+        },
+        {
+            "name": "Business Eight",
+            "address": "123 Orange Ln.",
+            "phoneNumber": "555-555-555",
+            "websiteURL": "domain.com",
+            "logoFile": "https://placebear.com/50/75",
+            "membershipLevel": "Non-Profit",
+            "membershipYears": "1 Years",
+            "industry": "Information"
+        },
+        {
+            "name": "Business Nine",
+            "address": "123 Oak St.",
+            "phoneNumber": "555-555-555",
+            "websiteURL": "domain.com",
+            "logoFile": "https://placebear.com/50/75",
+            "membershipLevel": "Gold",
+            "membershipYears": "1 Years",
+            "industry": "Technology"
         }
     ]
 }
