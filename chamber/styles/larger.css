@@ -78,6 +78,25 @@
         box-shadow: 5px 5px 5px #787676;
     }
 
+    main.directory {
+        grid-template-columns: 1fr;
+    }
+
+    #btnDiv {
+        grid-column: 1/3;
+    }
+    
+    #members.grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .list section {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-gap: 1.5rem;
+    }
+
     #submit:hover{
         font-size: x-large;
         height: 51px;

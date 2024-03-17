@@ -1,3 +1,20 @@
+const membersDiv = document.getElementById("members")
+const gridBtn = document.getElementById("gridBtn")
+const listBtn = document.getElementById("listBtn")
+
+gridBtn.addEventListener("click", () => {
+    membersDiv.classList.add("grid")
+    // membersDiv.classList.add("card")
+    membersDiv.classList.remove("list")
+})
+
+listBtn.addEventListener("click", () => {
+    membersDiv.classList.add("list")
+    // membersDiv.classList.remove("card")
+    membersDiv.classList.remove("grid")
+})
+
+
 async function getMembers() {
     const membersListURL = "https://smilingjenny.github.io/wdd230/chamber/data/members.json"
     const response = await fetch(membersListURL)
@@ -8,7 +25,6 @@ getMembers()
 
 
 const displayMembers = (members) => {
-    const membersDiv = document.getElementById("members")
 
     members.forEach(member => {
         const section = document.createElement("section")
@@ -32,6 +48,7 @@ const displayMembers = (members) => {
         membersDiv.appendChild(section)
     })
 }
+
 
 
 

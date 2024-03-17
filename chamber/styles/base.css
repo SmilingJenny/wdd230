@@ -280,6 +280,8 @@ a {
     color: var(--main-blue);
 }
 
+/* Discover Specific Styles */
+
 .discover .card {
     padding-top: 0;
     margin-bottom: 2rem;
@@ -312,6 +314,11 @@ a {
 
 /* Directory Specific Styles */
 
+main.directory {
+    display: grid;
+    /* justify-content: center; */
+}
+
 #btnDiv {
     display: grid; 
     grid-template-columns: 1fr 1fr;
@@ -325,14 +332,33 @@ a {
     background-color: transparent;
     border: 1px solid var(--main-charcoal-black);    
     color: var(--main-charcoal-black);
+    font-family: var(--main-text-font);
     font-weight: bold;
 }
 
 #gridBtn:hover, #listBtn:hover,
 #gridBtn:active, #listBtn:active {
     text-decoration: underline;
+    text-underline-offset: .25rem;
+    background-color: rgb(237, 235, 235);
 }
 
+.list section {
+    margin: 1rem;
+    border: none;
+    box-shadow: none;
+    padding: 1rem;
+    font-family: var(--main-text-font);
+    text-align: center;
+}
+
+.list section:nth-child(odd) {
+    background-color: rgb(237, 235, 235);
+}
+
+.list section img {
+    display: none;
+}
 
 
 /* Join Specific Styles */

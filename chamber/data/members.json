@@ -5,7 +5,7 @@
             "address": "123 Apple St.",
             "phoneNumber": "555-555-555",
             "websiteURL": "domain.com",
-            "logoFile": "https://placebear.com/50/75",
+            "logoFile": "images/member-logos.wp",
             "membershipLevel": "Gold",
             "membershipYears": "5 Years",
             "industry": "Technology"
