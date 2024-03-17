@@ -232,7 +232,7 @@ section#meetingBanner.close {
     right: .5rem;
     display: block;
     background-color: transparent;
-    border-color: transparent;    
+    border-color: transparent;
     color: var(--main-blue);
 }
 
@@ -316,28 +316,30 @@ a {
 
 main.directory {
     display: grid;
-    /* justify-content: center; */
 }
 
 #btnDiv {
-    display: grid; 
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
     margin: 0 1rem;
 }
 
-#gridBtn, #listBtn {
+#gridBtn,
+#listBtn {
     margin: .5rem 0;
     padding: .5rem;
     background-color: transparent;
-    border: 1px solid var(--main-charcoal-black);    
+    border: 1px solid var(--main-charcoal-black);
     color: var(--main-charcoal-black);
     font-family: var(--main-text-font);
     font-weight: bold;
 }
 
-#gridBtn:hover, #listBtn:hover,
-#gridBtn:active, #listBtn:active {
+#gridBtn:hover,
+#listBtn:hover,
+#gridBtn:active,
+#listBtn:active {
     text-decoration: underline;
     text-underline-offset: .25rem;
     background-color: rgb(237, 235, 235);
@@ -351,8 +353,6 @@ main.directory {
     font-weight: bold;
     color: #205893;
 }
-
-
 
 .list section {
     margin: 1rem;

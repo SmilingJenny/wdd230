@@ -4,13 +4,11 @@ const listBtn = document.getElementById("listBtn")
 
 gridBtn.addEventListener("click", () => {
     membersDiv.classList.add("grid")
-    // membersDiv.classList.add("card")
     membersDiv.classList.remove("list")
 })
 
 listBtn.addEventListener("click", () => {
     membersDiv.classList.add("list")
-    // membersDiv.classList.remove("card")
     membersDiv.classList.remove("grid")
 })
 
