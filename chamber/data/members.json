@@ -5,7 +5,7 @@
             "address": "123 Apple St.",
             "phoneNumber": "555-555-555",
             "websiteURL": "domain.com",
-            "logoFile": "images/member-logos.wp",
+            "logoFile": "https://github.com/SmilingJenny/wdd230/blob/main/chamber/images/member-logos/logoipsum.webp",
             "membershipLevel": "Gold",
             "membershipYears": "5 Years",
             "industry": "Technology"

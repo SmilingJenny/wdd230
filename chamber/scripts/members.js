@@ -34,6 +34,8 @@ const displayMembers = (members) => {
         section.setAttribute("class", "card")
         logo.setAttribute("src", member.logoFile)
         logo.setAttribute("alt", `${member.name} Logo`)
+        // logo.setAttribute("width", "175")
+        // logo.setAttribute("height", "40")
 
         section.appendChild(logo)
         function infoParagraphs(memberInfo) {
