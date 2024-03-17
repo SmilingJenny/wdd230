@@ -5,7 +5,7 @@
             "address": "123 Apple Ave.",
             "phoneNumber": "111-111-1111",
             "websiteURL": "businessOneDomain.com",
-            "logoFile": "https://placebear.com/50/75",
+            "logoFile": "https://fakeimg.pl/50x75/e69c9c/ffffff?text=Logo~Ispom",
             "membershipLevel": "Gold",
             "membershipYears": "5 Years",
             "industry": "Technology"
@@ -55,7 +55,7 @@
             "address": "123 Aspen St.",
             "phoneNumber": "666-666-6666",
             "websiteURL": "businessSixDomain.com",
-            "logoFile": "https://placebear.com/50/75",
+            "logoFile": "https://fakeimg.pl/50x75/e69c9c/ffffff?text=Logo~Ispom",
             "membershipLevel": "Silver",
             "membershipYears": "6 Years",
             "industry": "Business"
@@ -75,7 +75,7 @@
             "address": "123 Orange Ln.",
             "phoneNumber": "888-888-8888",
             "websiteURL": "businessEightDomain.com",
-            "logoFile": "https://placebear.com/50/75",
+            "logoFile": "https://fakeimg.pl/50x75/e69c9c/ffffff?text=Logo~Ispom",
             "membershipLevel": "Non-Profit",
             "membershipYears": "1 Years",
             "industry": "Information"
