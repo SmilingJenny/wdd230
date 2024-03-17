@@ -310,6 +310,33 @@ a {
     max-width: 500px;
 }
 
+/* Directory Specific Styles */
+
+#btnDiv {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 0 1rem;
+}
+
+#gridBtn, #listBtn {
+    margin: .5rem 0;
+    padding: .5rem;
+    background-color: transparent;
+    border: 1px solid var(--main-charcoal-black);    
+    color: var(--main-charcoal-black);
+    font-weight: bold;
+}
+
+#gridBtn:hover, #listBtn:hover,
+#gridBtn:active, #listBtn:active {
+    text-decoration: underline;
+}
+
+
+
+/* Join Specific Styles */
+
 .join h2 {
     font-family: var(--main-text-font);
     text-align: center;
