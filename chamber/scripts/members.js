@@ -36,6 +36,7 @@ const displayMembers = (members) => {
         logo.setAttribute("alt", `${member.name} Logo`)
         logo.setAttribute("width", "50")
         logo.setAttribute("height", "75")
+        logo.setAttribute("loading", "lazy")
 
         section.appendChild(logo)
         function infoParagraphs(memberInfo) {
