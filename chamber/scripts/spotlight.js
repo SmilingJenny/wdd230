@@ -21,25 +21,30 @@ const displaySpotlight = (members) => {
     shuffle(eliteList)
     
     // display three of the elite members
-    const threeSpotLights = eliteList.slice(0, 3)    
-    const spotLightSection = document.querySelector(".spotlight")
+    const threeSpotlights = eliteList.slice(0, 3)    
+    const spotlightSection = document.querySelector(".spotlight")
     
-    threeSpotLights.forEach(spotLight => {
-        const spotLightCard = document.createElement("section")
+    threeSpotlights.forEach(spotlight => {
+        const spotlightCard = document.createElement("section")
         const logo = document.createElement("img")
-        const name = spotLight.name
-        const level = spotLight.membershipLevel
-        const blurb = spotLight.spotlightBlurb
+        const name = document.createElement("p")
+        const level = document.createElement("p")
+        const blurb = document.createElement("p")
         
-        spotLightCard.setAttribute("class", "card")
-        logo.setAttribute("src", spotLight.logoFile)
-        logo.setAttribute("alt", `${spotLight.name}'s Logo`)
+        spotlightCard.setAttribute("class", "card")
+        logo.setAttribute("src", spotlight.logoFile)
+        logo.setAttribute("alt", `${spotlight.name} Logo`)
+        logo.setAttribute("width", "50")
+        logo.setAttribute("height", "75")
+        logo.setAttribute("loading", "lazy")
+        name.textContent = spotlight.name
+        level.textContent = `Membership Level: ${spotlight.membershipLevel}`
+        blurb.textContent = spotlight.spotlightBlurb
         
-        spotLightCard.appendChild(logo)
-        spotLightCard.appendChild(name)
-        spotLightCard.appendChild(level)
-        spotLightCard.appendChild(blurb)
-        spotLightSection.appendChild(spotLightCard)
-        // console.log(spotLightSection.textContent)
+        spotlightCard.appendChild(logo)
+        spotlightCard.appendChild(name)
+        spotlightCard.appendChild(level)
+        spotlightCard.appendChild(blurb)
+        spotlightSection.appendChild(spotlightCard)
     });
 }

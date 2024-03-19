@@ -23,6 +23,7 @@ footer {
     margin: 0 auto;
 }
 
+/* Header Specific Styles */
 .darkMode {
     background-color: var(--main-black);
     color: var(--main-white);
@@ -151,6 +152,46 @@ a:active,
     color: var(--main-white);
 }
 
+/* Home and default Specific Styles */
+#meetingBanner {
+    position: relative;
+    text-align: center;
+    margin: 1rem auto 0 auto;
+    border: 1px dashed var(--main-charcoal-black);
+}
+
+section#meetingBanner.show {
+    display: block;
+}
+
+section#meetingBanner.close {
+    display: none;
+}
+
+#meetingBanner h2 {
+    margin-bottom: .5rem;
+}
+
+#meetingBanBtn {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    display: block;
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--main-blue);
+}
+
+#meetingBanBtn::before {
+    content: "✖";
+    font-size: 1.25rem;
+}
+
+#meetingBanBtn:hover,
+#meetingBanBtn:active {
+    color: var(--main-charcoal-black);
+}
+
 #heroImage {
     margin-top: 1.5rem;
     text-align: center;
@@ -193,65 +234,6 @@ h1 {
     font-family: var(--main-text-font);
 }
 
-.card.thankyou {
-    margin: 4rem 2rem;
-    padding: 2rem;
-    font-family: var(--main-text-font);
-    font-size: x-large;
-    text-align: center;
-    border: 1px dashed var(--main-orange);
-}
-
-.card.thankyou p {
-    margin: 1em;
-    line-height: 1.5em;
-}
-
-#meetingBanner {
-    position: relative;
-    text-align: center;
-    margin: 1rem auto 0 auto;
-    border: 1px dashed var(--main-charcoal-black);
-}
-
-section#meetingBanner.show {
-    display: block;
-}
-
-section#meetingBanner.close {
-    display: none;
-}
-
-#meetingBanner h2 {
-    margin-bottom: .5rem;
-}
-
-#meetingBanBtn {
-    position: absolute;
-    top: .5rem;
-    right: .5rem;
-    display: block;
-    background-color: transparent;
-    border-color: transparent;
-    color: var(--main-blue);
-}
-
-#meetingBanBtn::before {
-    content: "✖";
-    font-size: 1.25rem;
-}
-
-#meetingBanBtn:hover,
-#meetingBanBtn:active {
-    color: var(--main-charcoal-black);
-}
-
-#forecast {
-    display: grid;
-    grid-template-columns: 2fr 1fr 3fr;
-    align-items: start;
-}
-
 .darkMode .card {
     box-shadow: none;
 }
@@ -279,6 +261,23 @@ a {
     text-decoration: none;
     color: var(--main-blue);
 }
+
+#forecast {
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    align-items: start;
+}
+
+.spotlight section {
+    text-align: center;
+}
+
+.spotlight section p:first-of-type {
+    font-size: larger;
+    font-weight: bold;
+    color: #205893;
+}
+
 
 /* Discover Specific Styles */
 .visits {
@@ -315,8 +314,8 @@ a {
     max-width: 500px;
 }
 
-/* Directory Specific Styles */
 
+/* Directory Specific Styles */
 main.directory {
     display: grid;
 }
@@ -386,7 +385,6 @@ main.directory {
 
 
 /* Join Specific Styles */
-
 .join h2 {
     font-family: var(--main-text-font);
     text-align: center;
@@ -496,6 +494,23 @@ label.radio:last-child {
     line-height: normal;
 }
 
+/* Thank you Specific Styles */
+.card.thankyou {
+    margin: 4rem 2rem;
+    padding: 2rem;
+    font-family: var(--main-text-font);
+    font-size: x-large;
+    text-align: center;
+    border: 1px dashed var(--main-orange);
+}
+
+.card.thankyou p {
+    margin: 1em;
+    line-height: 1.5em;
+}
+
+
+/* Footer Specific Styles */
 footer {
     margin-top: 2rem;
     background-color: var(--main-blue);
