@@ -75,27 +75,15 @@ async function forecastData() {
 forecastData()
 
 function displayForecast(data) {
-
-    // I want the icon but it is complicated. Here is an incomplete attempt 
-    // data.list.forEach(object, index => {
-    //     if(index == 0 || index == 8 || index == 16)
-    //     // loop through the day1 code 3 times
-    // });
     
     // day 1
     const day1Date = document.getElementById("day1Date")
-    const day1Icon = document.getElementById("day1Icon")
     const day1Temp = document.getElementById("day1Temp")
     const day1Desc = document.getElementById("day1Desc")
-    const iconImg = document.createElement("img")
-    // const iconSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
-
-    
+        
     const day1 = data.list[0].dt * 1000
     const dateObj = new Date(day1)
     const formatDate = dateObj.toDateString()
-    // iconImg.setAttribute("src", iconSrc)
-    // iconImg.setAttribute("alt", "Weather Icon")
     const tempRound = Math.round(data.list[0].main.temp)
     const desc = data.list[0].weather[0].description
     const capDesc = titleCase(desc)
