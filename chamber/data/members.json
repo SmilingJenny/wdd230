@@ -8,7 +8,8 @@
             "logoFile": "https://fakeimg.pl/50x75/e69c9c/ffffff?text=Logo~Ispom",
             "membershipLevel": "Gold",
             "membershipYears": "5 Years",
-            "industry": "Technology"
+            "industry": "Technology",
+            "spotlightBlurb": "We have been serving Provo for 10 Years! Stop by and we will help you with all your tech needs."
         },
         {
             "name": "Business Two",
@@ -18,7 +19,8 @@
             "logoFile": "https://picsum.photos/50/75",
             "membershipLevel": "Gold",
             "membershipYears": "1 Years",
-            "industry": "Food"
+            "industry": "Food",
+            "spotlightBlurb": "We have been serving Provo for 20 Years! Stop by our restaurant and try our delicious desserts."
         },
         {
             "name": "Business Three",
@@ -28,7 +30,8 @@
             "logoFile": "https://placebear.com/50/75",
             "membershipLevel": "Silver",
             "membershipYears": "7 Years",
-            "industry": "Social"
+            "industry": "Social",
+            "spotlightBlurb": "We have been serving Provo for 13 Years! Stop by our headquarters on main street to see what we are all about."
         },
         {
             "name": "Business Four",
@@ -58,7 +61,8 @@
             "logoFile": "https://fakeimg.pl/50x75/e69c9c/ffffff?text=Logo~Ispom",
             "membershipLevel": "Silver",
             "membershipYears": "6 Years",
-            "industry": "Business"
+            "industry": "Business",
+            "spotlightBlurb": "We have been serving Provo for 6 Years! Stop by our headquarters downtown to see what we are all about."
         },
         {
             "name": "Business Seven",
@@ -68,7 +72,8 @@
             "logoFile": "https://placebear.com/50/75",
             "membershipLevel": "Gold",
             "membershipYears": "5 Years",
-            "industry": "Food"
+            "industry": "Food",
+            "spotlightBlurb": "We have been serving Provo for 7 Years! Stop by our restaurant and try our delicious desserts."
         },
         {
             "name": "Business Eight",
@@ -88,7 +93,8 @@
             "logoFile": "https://picsum.photos/50/75",
             "membershipLevel": "Gold",
             "membershipYears": "1 Years",
-            "industry": "Technology"
+            "industry": "Technology",
+            "spotlightBlurb": "We have been serving Provo for 19 Years! Stop by and we will help you with all your tech needs."
         }
     ]
 }

@@ -29,7 +29,7 @@ const displaySpotlight = (members) => {
         const logo = document.createElement("img")
         const name = spotLight.name
         const level = spotLight.membershipLevel
-        const blurb = spotLight.blurb
+        const blurb = spotLight.spotlightBlurb
         
         spotLightCard.setAttribute("class", "card")
         logo.setAttribute("src", spotLight.logoFile)
