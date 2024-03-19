@@ -241,6 +241,7 @@ h1 {
 h2 {
     color: var(--main-orange);
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .darkMode h2 {
@@ -264,15 +265,38 @@ a {
 
 #forecast {
     display: grid;
-    grid-template-columns: 2fr 1fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: start;
+}
+
+#forecast h3 {
+    grid-column: 1/4;
+    text-align: center;
+    padding-bottom: .5rem;
+}
+
+#forecast {
+    text-align: center;
+}
+
+#day1Temp, #day2Temp, #day3Temp {
+    color: var(--main-blue);
+}
+
+.spotlight {
+    display: grid;
 }
 
 .spotlight section {
     text-align: center;
 }
 
+.spotlight section p {
+    padding: .5rem 0;
+}
+
 .spotlight section p:first-of-type {
+    padding-bottom: 0;
     font-size: larger;
     font-weight: bold;
     color: #205893;
