@@ -263,10 +263,24 @@ a {
     color: var(--main-blue);
 }
 
+#iconFig {
+    display: grid;
+}
+
+#iconFig img {
+    justify-self: center;
+}
+
+#iconFig figcaption {
+    text-align: center;
+    color: var(--main-blue);
+}
+
 #forecast {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: start;
+    margin-top: .5rem;
 }
 
 #forecast h3 {
