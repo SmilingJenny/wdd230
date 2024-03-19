@@ -18,9 +18,10 @@ async function getMembers() {
     const response = await fetch(membersListURL)
     const membersList = await response.json()
     displayMembers(membersList.members)
+    // createSpotlight(membersList.members)
+    displaySpotlight(membersList.members)
 }
 getMembers()
-
 
 const displayMembers = (members) => {
 
@@ -52,7 +53,68 @@ const displayMembers = (members) => {
             });
         }
         infoParagraphs(memberInfo)
-
         membersDiv.appendChild(section)
     })
 }
+
+const displaySpotlight = (members) => {
+    // create filtered and randomized array of members
+    const eliteList = []
+
+    members.forEach(member => {
+        if (member.membershipLevel == "Silver" || member.membershipLevel == "Gold" )
+        eliteList.push(member)
+    });
+
+    function shuffle(eliteList) {
+        return eliteList.sort (() => Math.random()-0.5)
+    }
+    shuffle(eliteList)
+    
+    // display three of the elite members
+    const threeSpotLights = eliteList.slice(0, 3)    
+    const spotLightSection = document.querySelector(".spotlight")
+    
+    threeSpotLights.forEach(spotLight => {
+        const spotLightCard = document.createElement("section")
+        spotLightCard.setAttribute("class", "card")
+        spotLightCard.textContent = `${spotLight.name} ${spotLight.membershipLevel} Blurb`
+        // working to this point
+        console.log(spotLightCard.textContent)
+        
+        // not working for some reason
+        // spotLightSection.appendChild(spotLightCard)
+        // console.log(spotLightSection.textContent)
+        });
+}
+
+    
+
+
+// const createSpotlight = (members) => {
+//     const eliteList = []
+
+//     members.forEach(member => {
+//         if (member.membershipLevel == "Silver" || member.membershipLevel == "Gold" )
+//         eliteList.push(member)
+//     });
+
+//     function shuffle(eliteList) {
+//         return eliteList.sort (() => Math.random()-0.5)
+//     }
+//     shuffle(eliteList)
+    
+//     displaySpotlight(eliteList)
+// }
+
+// const displaySpotlight = (eliteList) => {
+//     const spotlightSection = document.querySelector(".spotlight")
+//     const threeSpotLights = eliteList.slice(0, 3)    
+    
+//     threeSpotLights.forEach(spotlight => {
+//         const spotlightCard = document.createElement("section")
+//         spotlightCard.setAttribute("class", "card")
+//         spotlight.textContent = spotlight
+//         spotlightSection.appendChild(spotlightCard)
+        
+//     });
