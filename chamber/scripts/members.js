@@ -27,7 +27,7 @@ const displayMembers = (members) => {
     members.forEach(member => {
         const section = document.createElement("section")
         const logo = document.createElement("img")
-        const memberInfo = [member.name, member.address, member.phoneNumber, member.websiteURL, member.membershipLevel, member.membershipYears, member.industry]
+        const memberInfo = [member.name, member.address, member.phoneNumber, member.websiteURL, `Membership Level: ${member.membershipLevel}`, `Membership: ${member.membershipYears}`, `Industry: ${member.industry}`]
 
         section.setAttribute("class", "card")
         logo.setAttribute("src", member.logoFile)
@@ -38,10 +38,17 @@ const displayMembers = (members) => {
 
         section.appendChild(logo)
         function infoParagraphs(memberInfo) {
-            memberInfo.forEach(property => {
+            memberInfo.forEach((property, index) => {
+                if (index !== 3) {
                 const p = document.createElement("p")
                 p.textContent = property
                 section.appendChild(p)
+            } else {
+                const a = document.createElement("a")
+                a.setAttribute("href", "#")
+                a.textContent = property
+                section.appendChild(a)
+            }
             });
         }
         infoParagraphs(memberInfo)
