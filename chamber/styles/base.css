@@ -160,6 +160,10 @@ a:active,
     border: 1px dashed var(--main-charcoal-black);
 }
 
+.darkMode #meetingBanner {
+    border-color: var(--main-white);
+}
+
 section#meetingBanner.show {
     display: block;
 }
@@ -190,6 +194,15 @@ section#meetingBanner.close {
 #meetingBanBtn:hover,
 #meetingBanBtn:active {
     color: var(--main-charcoal-black);
+}
+
+.darkMode #meetingBanBtn {
+    color: var(--main-white);
+}
+
+.darkMode #meetingBanBtn:hover,
+.darkMode #meetingBanBtn:active {
+    font-weight: bold;
 }
 
 #heroImage {
@@ -266,6 +279,11 @@ a {
 #iconFig {
     display: grid;
 }
+
+/* I don't know if I want to change this color */
+/* .darkMode #iconFig figcaption {
+    color: var(--main-white);
+} */
 
 #iconFig img {
     justify-self: center;
