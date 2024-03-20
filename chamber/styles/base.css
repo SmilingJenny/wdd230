@@ -136,9 +136,9 @@ a:active,
     display: block;
     width: 7rem;
     margin: 1rem;
-    padding: 1rem .5rem;
+    padding: .9rem .5rem;
     background-color: transparent;
-    border-color: transparent;
+    border: none;
     background-color: var(--main-orange);
     color: white;
     font-size: 19px;
