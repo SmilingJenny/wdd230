@@ -596,6 +596,18 @@ footer {
     padding: 1rem;
 }
 
+footer a {
+    color: var(--main-white);
+    text-decoration: underline;
+    text-underline-offset: .15rem;
+}
+
+footer :is(a:hover, a:active) {
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: .15rem;
+}
+
 .darkMode footer {
     background-color: var(--main-black);
 }
