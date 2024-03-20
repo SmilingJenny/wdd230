@@ -234,9 +234,7 @@ h1 {
     line-height: 1.75em;
 }
 
-.darkMode h1 {
-    color: var(--main-white);
-}
+
 
 .card {
     margin: 1rem;
@@ -255,10 +253,6 @@ h2 {
     color: var(--main-orange);
     margin-bottom: 1rem;
     text-align: center;
-}
-
-.darkMode h2 {
-    color: var(--main-white);
 }
 
 li {
@@ -394,6 +388,12 @@ main.directory {
     font-weight: bold;
 }
 
+.darkMode :is(#gridBtn,
+#listBtn) {
+    color: var(--main-white);
+    border-color: var(--main-white);
+}
+
 #gridBtn:hover,
 #listBtn:hover,
 #gridBtn:active,
@@ -401,6 +401,13 @@ main.directory {
     text-decoration: underline;
     text-underline-offset: .25rem;
     background-color: rgb(237, 235, 235);
+}
+
+.darkMode :is(#gridBtn:hover,
+#listBtn:hover,
+#gridBtn:active,
+#listBtn:active) {
+    background-color: var(--main-charcoal-black);
 }
 
 #members section {
@@ -441,6 +448,13 @@ main.directory {
 
 
 /* Join Specific Styles */
+
+.darkMode :is(div.levels, h3.levels-labels,
+h4.benefits, h4.cost, div.levels>p:first-of-type, div.levels div p.no) {
+    color: var(--main-white);
+    border-bottom: var(--main-white);
+}
+
 .join h2 {
     font-family: var(--main-text-font);
     text-align: center;
@@ -550,6 +564,12 @@ label.radio:last-child {
     line-height: normal;
 }
 
+.darkMode #submit {
+    box-shadow: none;
+    border-color: var(--main-black);
+}
+
+
 /* Thank you Specific Styles */
 .card.thankyou {
     margin: 4rem 2rem;
@@ -574,4 +594,8 @@ footer {
     font-family: var(--main-title-font);
     text-align: center;
     padding: 1rem;
+}
+
+.darkMode footer {
+    background-color: var(--main-black);
 }
