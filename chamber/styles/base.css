@@ -596,6 +596,10 @@ footer {
     padding: 1rem;
 }
 
+.darkMode footer {
+    background-color: var(--main-black);
+}
+
 footer a {
     color: var(--main-white);
     text-decoration: underline;
@@ -608,6 +612,21 @@ footer :is(a:hover, a:active) {
     text-underline-offset: .15rem;
 }
 
-.darkMode footer {
-    background-color: var(--main-black);
+#contact {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--main-black);
+
+}
+
+#contact p {
+    justify-self: end;
+    color: var(--main-black);
+    font-size:x-large;
+}
+
+#socials a {
+    padding: 0 .5rem;
 }
