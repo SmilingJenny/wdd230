@@ -614,8 +614,8 @@ footer :is(a:hover, a:active) {
 }
 
 #contact {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
+    display: flex;
+    justify-content: center;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid var(--main-black);
@@ -623,9 +623,14 @@ footer :is(a:hover, a:active) {
 }
 
 #contact p {
-    justify-self: end;
-    color: var(--main-black);
+    justify-self: center;
+    color: var(--main-white);
     font-size:x-large;
+}
+
+#socials {
+    justify-self: center;
+    margin-left: 3rem;
 }
 
 #socials a {
