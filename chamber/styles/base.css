@@ -226,6 +226,7 @@ main {
 }
 
 h1 {
+    margin: 1rem;
     font-family: var(--main-title-font);
     color: var(--main-blue);
     text-align: center;
@@ -233,8 +234,6 @@ h1 {
     text-underline-offset: .5em;
     line-height: 1.75em;
 }
-
-
 
 .card {
     margin: 1rem;
@@ -330,6 +329,8 @@ a {
 
 
 /* Discover Specific Styles */
+
+
 .visits {
     text-align: center;
 }
