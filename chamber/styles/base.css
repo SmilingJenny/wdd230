@@ -481,7 +481,7 @@ h4.cost {
 
 div.levels>p:first-of-type {
     font-size: smaller;
-    color: var(--main-charcoal-black);
+    color: var(--main-black);
 }
 
 div.levels>div {
@@ -553,6 +553,7 @@ label.radio input {
 
 label.radio:last-child {
     color: var(--main-orange);
+    font-weight: bold;
 }
 
 #submit {
@@ -562,6 +563,7 @@ label.radio:last-child {
     border: 1px solid lightgrey;
     box-shadow: 3px 3px 3px #d8d8d8;
     font-size: large;
+    font-weight: bold;
     line-height: normal;
 }
 
