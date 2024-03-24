@@ -618,7 +618,7 @@ footer :is(a:hover, a:active) {
     justify-content: center;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid var(--main-black);
+    border-bottom: 2px solid var(--main-white);
 
 }
 
