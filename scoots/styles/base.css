@@ -14,6 +14,10 @@
     --main-orange: #ff9020;
 }
 
+header, main, footer {
+    max-width: 800px;
+}
+
 /* Header */
 #hamBtn {
     display: block;

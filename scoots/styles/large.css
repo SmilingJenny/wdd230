@@ -1,0 +1,17 @@
+@media screen and (min-width: 1200px) {
+ 
+    header, main, footer {
+        max-width: 1200px;
+    }
+
+    #navBar {
+        display: flex;
+    }
+
+    #navBar a {
+        flex: 1 1 100%;
+        margin: 1rem;
+        padding: 1rem;
+        width: 9rem;
+    }
+}
