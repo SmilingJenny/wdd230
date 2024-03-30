@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
-    <link rel="icon" href="scoots-favicon-black-32.webp" type="webp">
+    <link rel="icon" href="scoots-favicon-black-32.webp" type="image/webp">
     <meta property="og:title" content="Scoots, Rental Company">
     <meta property="og:type" content="website">
     <!-- verify below links -->
@@ -25,13 +25,23 @@
 
 <body>
     <header>
-        <img src="images/logo/logo-color-250.webp" alt="Scoots Logo" loading="lazy" width="250" height="113">
-        <img src="images/logo/logo-black-250.webp" alt="Scoots Logo" loading="lazy" width="250" height="113">
-        <!-- <img src="images/logo/scoots-logo-black.webp" alt="Scoots Logo" loading="lazy" width="250" height="125"> -->
+        <a href="#"><img src="images/logo/logo-color-250.webp" alt="Scoots Logo" loading="lazy" width="250"
+                height="113"></a>
+        <!-- <a href="#"><img src="images/logo/logo-black-250.webp" alt="Scoots Logo" loading="lazy" width="250"
+                height="113"></a> -->
+        <nav id="navBar">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="hamBtn" aria-label="Nav Menu."></button>
     </header>
     <main></main>
     <footer></footer>
-    <script></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

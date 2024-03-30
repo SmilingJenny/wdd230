@@ -5,8 +5,8 @@
 }
 
 :root {
-    --main-title-font-slab: "Lobster", sans-serif;
-    --main-text-font-sans: "Quicksand", sans-serif;
+    --main-title-font: "Lobster", sans-serif;
+    --main-text-font: "Quicksand", sans-serif;
     --main-deep-blue: #046eb0;
     --main-light-blue: #3de6f5;
     --main-green: #50ad2b;
@@ -14,7 +14,63 @@
     --main-orange: #ff9020;
 }
 
+/* Header */
+#hamBtn {
+    display: block;
+    border: none;
+    background: none;
+    position: absolute;
+    right: 1rem;
+    top: 5.5rem;
+}
+
+#hamBtn::before {
+    content: "≡";
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+#hamBtn.show::before {
+    content: "✖";
+    font-size: 2rem;
+    font-weight: unset;
+    line-height: 1.5rem;
+}
+
+#navBar {
+    display: none;
+
+}
+
+#navBar.show {
+    display: block;
+    text-align: center;
+}
+
+#navBar a {
+    display: block;
+    padding: 1rem .5rem;
+    background-color: black;
+    color: white;
+
+}
+
+#navBar .active {
+    color: var(--main-light-blue);
+    /* text-decoration-color: var(--main-light-blue); */
+}
+
 /* Base styles */
+a {
+    text-decoration: none;
+    font-family: var(--main-text-font);
+    /* I don't want lines on the nav links, so I am not using these rules rn
+    text-decoration: underline;
+    text-underline-offset: .5em; */
+    /* text-decoration-color: white; */
+}
+
 /* Home styles */
 /* Rentals styles */
 /* Reservations styles */
