@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-title-font-slab: "Lobster", sans-serif;
+    --main-text-font-sans: "Quicksand", sans-serif;
+    --main-deep-blue: #046eb0;
+    --main-light-blue: #3de6f5;
+    --main-green: #50ad2b;
+    --main-yellow: #ffcc33;
+    --main-orange: #ff9020;
+}
+
+/* Base styles */
+/* Home styles */
+/* Rentals styles */
+/* Reservations styles */
+/* Contact styles */
+/* Form Thanks styles */
+/* Attribution styles */
