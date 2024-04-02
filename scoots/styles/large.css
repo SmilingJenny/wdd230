@@ -7,6 +7,7 @@
         max-width: 1200px;
     }
 
+    /* Header */
     header {
         display: flex;
         position: static;
@@ -32,7 +33,6 @@
     }
 
     #navBar a {
-        /* margin-bottom: 1rem; */
         padding: 0;
         background-color: white;
         text-decoration-color: white;
@@ -40,5 +40,11 @@
 
     #hamBtn {
         display: none;
+    }
+
+    /* Home Styles */
+    #home .card {
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
 }
