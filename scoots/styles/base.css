@@ -27,6 +27,10 @@ footer {
 header {
     display: flex;
     flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
     border: 1px dashed green;
 }
 
@@ -44,7 +48,6 @@ header {
 }
 
 #hamBtn {
-    /* maybe move to lg */
     align-self:flex-end;
     border: none;
     background: none;
@@ -70,15 +73,15 @@ nav {
 }
 
 #navBar.show {
-    display: block;
-    /* I don't think I'll need it */
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
 }
 
 #navBar a {
-    /* move to lg if not needed in base */
-    display: block;
-    padding: 1rem .5rem;
+    display: flex;
+    justify-content: center;
     color: black;
     font-weight:bold;
     text-decoration-color: white;    

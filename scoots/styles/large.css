@@ -8,6 +8,7 @@
 
     header {
         flex-direction: row;
+        position: static;
     }
 
     nav {
@@ -20,6 +21,9 @@
         justify-content: space-around;
     }
 
+    #navBar a {
+        padding: 1rem .5rem;
+    }
 
     #hamBtn {
         display: none;
