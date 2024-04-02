@@ -145,6 +145,17 @@ li {
     list-style: none;
 }
 
+h1 {
+    text-align: center;
+}
+
+/* for gallery */
+/* img {
+    width: 100%;
+    height: auto;
+    max-width: fit-content;
+} */
+
 .card {
     margin: .5rem 1rem;
     padding: 1rem;
@@ -154,9 +165,7 @@ li {
     opacity: .9; 
 }
 
-h1 {
-    text-align: center;
-}
+
 
 
 /* Home styles */
