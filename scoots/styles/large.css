@@ -20,6 +20,12 @@
         justify-content: space-around;
     }
 
+    #navBar :is(:hover, :active) {
+        background-color: white;
+        text-decoration-color: black;
+            
+    }
+
     #navBar a {
         padding: 0;
         background-color: white;
