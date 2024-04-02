@@ -108,6 +108,7 @@ nav {
     font-size: large;
     font-weight: bold;
     text-decoration-color: rgb(205, 205, 205);
+    text-decoration-thickness: 3px;
 }
 
 #navBar .active {
@@ -129,7 +130,7 @@ button {
 a {
     text-decoration: underline;
     text-underline-offset: 6px;
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 1px;
 }
 
 li {
@@ -146,26 +147,41 @@ li {
 
 /* Footer styles */
 footer {
-    display: flex;
-    flex: 1 1 100%;
-    gap: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 1rem;
+    padding: 1rem .5rem;
     text-align: center;
     font-size: large;
+    line-height: 1.5;
     color: rgb(255, 255, 255);
     background-color: var(--main-deep-blue);
 }
 
-footer p {
-    margin-left: auto;
-    line-height: 1.5;
+#contact {
+    display: flex;
+    flex: 1 1 100%;
+    gap: 3rem;
+    margin-bottom: .5rem;
+    grid-column: 1/2;
+    border-right: 1px solid white;
 }
 
-footer div {
+#contact p {
+    margin-left: auto;
+}
+
+#contact > div {
     margin-right: auto;
     align-self: center;
+    
+}
+
+#attrPage {
+    display: block;
+    margin-bottom: .5rem;
+    color: white;
 }
