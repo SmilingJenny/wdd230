@@ -148,6 +148,7 @@ li {
 /* Home styles */
 main {
     display: grid;
+    background-image: url("https://smilingjenny.github.io/wdd230/scoots/images/palm-trees-viola-pixabay-853-1280.webp");
 }
 
 #reserveBtn {
