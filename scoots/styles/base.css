@@ -139,6 +139,23 @@ li {
 
 
 /* Home styles */
+main {
+    display: grid;
+}
+
+#reserveBtn {
+    display: block;
+    padding: .75rem;
+    font-size: larger;
+    font-family: var(--main-title-font);
+    background: linear-gradient(to left, var(--main-yellow), var(--main-orange));
+    border-radius: 10px;
+    margin: 1rem 5rem;
+    justify-content: center;
+}
+
+
+
 /* Rentals styles */
 /* Reservations styles */
 /* Contact styles */
@@ -153,7 +170,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 1rem .5rem;
+    padding: .5rem;
     text-align: center;
     font-size: large;
     line-height: 1.5;
