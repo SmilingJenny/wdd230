@@ -147,13 +147,16 @@ li {
 
 /* Home styles */
 main {
+    height: 100vh;
     display: grid;
     background-image: url("https://smilingjenny.github.io/wdd230/scoots/images/palm-trees-viola-pixabay-853-1280.webp");
+    background-size: cover;
 }
 
 #reserveBtn {
     display: block;
     padding: .75rem;
+    height: 3rem;
     font-size: larger;
     font-family: var(--main-title-font);
     background: linear-gradient(to left, var(--main-yellow), var(--main-orange));
@@ -162,6 +165,8 @@ main {
     justify-content: center;
 }
 
+/* For home card elements */
+/* opacity: .5; */
 
 
 /* Rentals styles */
