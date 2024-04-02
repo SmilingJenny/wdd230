@@ -31,7 +31,6 @@ header {
     top: 0;
     right: 0;
     bottom: 0;
-    border: 1px dashed green;
 }
 
 #logo {
@@ -51,7 +50,6 @@ header {
     align-self:flex-end;
     border: none;
     background: none;
-    background-color: #3de6f5;
 }
 
 #hamBtn::before {
@@ -62,10 +60,6 @@ header {
 #hamBtn.show::before {
     content: "\e5cd";
     font-size: 2.5rem;
-}
-
-nav {
-    background-color: pink;
 }
 
 #navBar {
