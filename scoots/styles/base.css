@@ -166,8 +166,6 @@ h1 {
 }
 
 
-
-
 /* Home styles */
 main {
     display: grid;
@@ -189,7 +187,7 @@ main {
     justify-content: center;
 }
 
-#home h1 {
+.home h1 {
     margin: 2rem 10rem;
     color: white;
     font-size: xx-larger;
@@ -198,7 +196,7 @@ main {
     text-decoration: underline;
 }
 
-#home h2 {
+.home h2 {
     margin-top: 2rem;
     margin-left: 2rem;
 }
@@ -208,7 +206,24 @@ main {
     opacity: 1;
 }
 
-#home .card:last-of-type {
+.gallery img {
+    margin: 1rem;
+}
+
+.gallery h2, .weather h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.gallery, .weather {
+    padding: 0 2rem;
+}
+
+:is(.gallery p, .weather p) {
+    margin: 1rem 0;
+}
+
+.home .card:last-of-type {
     margin-bottom: 2rem;
 }
 

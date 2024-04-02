@@ -28,7 +28,7 @@
 <body>
     <div id="tempBan">
         <button id="tempBtn" class="material-symbols-outlined" aria-label="Close hi-temp. banner button."></button>
-        <p>The High Temp today is: 85&deg;F.</p>
+        <p>The high today is: <span id="high-temp"></span>&deg;F.</p>
     </div>
     <header>
         <a href="#"><img id="logo" src="images/logo/logo-color-250.webp" alt="Scoots Logo" loading="lazy" width="250"
@@ -44,7 +44,7 @@
         </nav>
     </header>
 
-    <main id="home">
+    <main class="home">
         <h1>Welcome to Scoots Rentals</h1>
         <button id="reserveBtn" aria-label="Reserve rental button">Reserve your adventure today!</button>
         <section class="rentalInfo card">
@@ -58,15 +58,22 @@
             <p class="card">Jeep Wrangler - 4 door manuel with A/C - 5 person</p>
             <p class="card">Jeep Wrangler - 2 door - open air - manuel - 4 person</p>
         </section>
-        <section class="weather card">
-            <h2>Weather Data</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas culpa eos quos aut voluptatum? Omnis quis
-                provident quasi ratione voluptas nesciunt, repudiandae eos nemo, necessitatibus voluptatum pariatur eius
-                quo cumque.</p>
-        </section>
+
         <section class="gallery card">
+            <h2>Cozumel's Scenic Views </h2>
+            <p>On Cozumel there is so much to see and do. Take a look and the type of sites you can soak up while cruising around the island on one of our many rides.</p>
             <img src="images/logo/logo-color-250.webp" alt="Scoots Logo" loading="lazy" width="250"
                 height="113">
+        </section>
+
+        <section class="weather card">
+            <h2>Weather in Cozumel</h2>
+            <p>To make the most of your time on our beautiful island, make sure to check the weather and plan ahead!</p><br>
+            <p>The current temperature is <span id="temp"></span>&deg;F.</p>
+            <p>The current humidity is: <span id="hum"></span>&deg;F.</p>
+            <p>Tomorrow's forecast for 3 PM is:</p>
+            <!-- <figure id="forecast"></figure> -->
+            <figure id="forecast"></figure>
         </section>
     </main>
 
@@ -91,6 +98,7 @@
         </div>
     </footer>
     <script src="scripts/script.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
