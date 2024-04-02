@@ -1,5 +1,6 @@
 @media screen and (min-width: 1200px) {
 
+    #tempBan,
     header,
     main,
     footer {
@@ -23,7 +24,7 @@
     #navBar :is(:hover, :active) {
         background-color: white;
         text-decoration-color: black;
-            
+
     }
 
     #navBar a {
