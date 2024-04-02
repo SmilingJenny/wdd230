@@ -14,66 +14,112 @@
     --main-orange: #ff9020;
 }
 
-header, main, footer {
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+
+
+header,
+main,
+footer {
     max-width: 800px;
 }
 
 /* Header */
-#hamBtn {
+
+header {
+    display: flex;
+    /*  */
+    border: 1px dashed green;
+}
+
+#logo {
     display: block;
-    border: none;
-    background: none;
-    position: absolute;
-    right: 1rem;
-    top: 5.5rem;
 }
 
-#hamBtn::before {
-    content: "≡";
-    font-size: 3rem;
-    font-weight: 600;
-    line-height: 1.5rem;
-}
 
-#hamBtn.show::before {
-    content: "✖";
-    font-size: 2rem;
-    font-weight: unset;
-    line-height: 1.5rem;
+nav {
+    flex-grow: 1;
+    align-self:flex-end;
+    /*  */
+    /* background-color: pink; */
 }
 
 #navBar {
     display: none;
-
 }
 
 #navBar.show {
-    display: block;
-    text-align: center;
+    display: flex;
+    /* position: ; */
+    /* display: block; */
+    /* text-align: center; */
 }
 
 #navBar a {
     display: block;
     padding: 1rem .5rem;
-    background-color: black;
-    color: white;
-
+    color: black;
+    font-weight:bold;
+    text-decoration-color: white;    
 }
 
 #navBar .active {
-    color: var(--main-light-blue);
-    /* text-decoration-color: var(--main-light-blue); */
+    /* color: var(--main-deep-blue); */
+    text-decoration-color: var(--main-light-blue);
+}
+
+#hamBtn {
+    /* display: block; */
+    /* margin-top: auto; */
+    align-self:flex-end;
+    border: none;
+    background: none;
+    /*  */
+    background-color: #3de6f5;
+
+    /* position: absolute;
+    right: 1rem;
+    top: 5.5rem; */
+}
+
+#hamBtn::before {
+    content: "\e5d2";
+    font-size: 2.5rem;
+    /* content: "≡"; */
+    /* font-size: 3rem; */
+    /* font-weight: 600; */
+    /* line-height: 1.5rem; */
+}
+
+#hamBtn.show::before {
+    content: "\e5cd";
+    font-size: 2.5rem;
+    /* content: "✖"; */
+    /* font-size: 2rem; */
+    /* font-weight: unset; */
+    /* line-height: 1.5rem; */
 }
 
 /* Base styles */
 a {
     text-decoration: none;
     font-family: var(--main-text-font);
-    /* I don't want lines on the nav links, so I am not using these rules rn
     text-decoration: underline;
-    text-underline-offset: .5em; */
-    /* text-decoration-color: white; */
+    text-underline-offset: .5em; 
+    
 }
+
+li {
+    list-style: none;
+}
+
 
 /* Home styles */
 /* Rentals styles */
