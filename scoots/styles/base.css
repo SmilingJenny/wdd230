@@ -14,7 +14,27 @@
     --main-orange: #ff9020;
 }
 
+header,
+main,
+footer {
+    margin: 0 auto;
+    max-width: 800px;
+}
 
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    border: 1px dashed green;
+}
+
+#logo {
+    display: block;
+}
+
+/* icon rule from google */
 .material-symbols-outlined {
     font-variation-settings:
         'FILL' 0,
@@ -23,32 +43,26 @@
         'opsz' 24
 }
 
-
-
-header,
-main,
-footer {
-    max-width: 800px;
+#hamBtn {
+    /* maybe move to lg */
+    align-self:flex-end;
+    border: none;
+    background: none;
+    background-color: #3de6f5;
 }
 
-/* Header */
-
-header {
-    display: flex;
-    /*  */
-    border: 1px dashed green;
+#hamBtn::before {
+    content: "\e5d2";
+    font-size: 2.5rem;
 }
 
-#logo {
-    display: block;
+#hamBtn.show::before {
+    content: "\e5cd";
+    font-size: 2.5rem;
 }
-
 
 nav {
-    flex-grow: 1;
-    align-self:flex-end;
-    /*  */
-    /* background-color: pink; */
+    background-color: pink;
 }
 
 #navBar {
@@ -56,13 +70,13 @@ nav {
 }
 
 #navBar.show {
-    display: flex;
-    /* position: ; */
-    /* display: block; */
-    /* text-align: center; */
+    display: block;
+    /* I don't think I'll need it */
+    text-align: center;
 }
 
 #navBar a {
+    /* move to lg if not needed in base */
     display: block;
     padding: 1rem .5rem;
     color: black;
@@ -71,49 +85,16 @@ nav {
 }
 
 #navBar .active {
-    /* color: var(--main-deep-blue); */
     text-decoration-color: var(--main-light-blue);
 }
 
-#hamBtn {
-    /* display: block; */
-    /* margin-top: auto; */
-    align-self:flex-end;
-    border: none;
-    background: none;
-    /*  */
-    background-color: #3de6f5;
-
-    /* position: absolute;
-    right: 1rem;
-    top: 5.5rem; */
-}
-
-#hamBtn::before {
-    content: "\e5d2";
-    font-size: 2.5rem;
-    /* content: "≡"; */
-    /* font-size: 3rem; */
-    /* font-weight: 600; */
-    /* line-height: 1.5rem; */
-}
-
-#hamBtn.show::before {
-    content: "\e5cd";
-    font-size: 2.5rem;
-    /* content: "✖"; */
-    /* font-size: 2rem; */
-    /* font-weight: unset; */
-    /* line-height: 1.5rem; */
-}
 
 /* Base styles */
 a {
-    text-decoration: none;
     font-family: var(--main-text-font);
     text-decoration: underline;
-    text-underline-offset: .5em; 
-    
+    text-underline-offset: 6px; 
+    text-decoration-thickness: 3px; 
 }
 
 li {
