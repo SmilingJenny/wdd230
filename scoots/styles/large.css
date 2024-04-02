@@ -8,8 +8,6 @@
 
     header {
         display: flex;
-        flex-direction: row;
-        position: static;
     }
 
     nav {
