@@ -9,6 +9,8 @@
 
     header {
         display: flex;
+        position: static;
+        z-index: initial;
     }
 
     nav {
@@ -19,6 +21,8 @@
     #navBar {
         display: flex;
         justify-content: space-around;
+        position: static;
+        z-index: initial;
     }
 
     #navBar :is(:hover, :active) {

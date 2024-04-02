@@ -64,6 +64,8 @@ footer {
 header {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    position: relative;
+    z-index: 1;
 }
 
 #logo {
@@ -93,6 +95,11 @@ nav {
 
 #navBar {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 2;
 }
 
 #navBar.show {
