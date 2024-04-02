@@ -1,14 +1,15 @@
 const tempBtn = document.getElementById("tempBtn")
 const tempBan = document.getElementById("tempBan")
 
-const hamBtn = document.getElementById("hamBtn")
-const navBar = document.getElementById("navBar")
-
 tempBan.classList.add("open")
 
 tempBtn.addEventListener("click", () => {
     tempBan.classList.remove("open")
 })
+
+
+const hamBtn = document.getElementById("hamBtn")
+const navBar = document.getElementById("navBar")
 
 hamBtn.addEventListener("click", () => {
     hamBtn.classList.toggle("show")
@@ -16,8 +17,8 @@ hamBtn.addEventListener("click", () => {
 });
 
 
-// const joinButton = document.querySelector("#joinButton")
+const reserveBtn = document.getElementById("reserveBtn")
 
-// joinButton.addEventListener("click", () => {
-//     window.location.href="join.html"
-// })
+reserveBtn.addEventListener("click", () => {
+    window.location.href="reservations.html"
+})
