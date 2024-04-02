@@ -144,6 +144,19 @@ li {
     list-style: none;
 }
 
+.card {
+    margin: .5rem 1rem;
+    padding: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    opacity: .8; 
+}
+
+h1 {
+    text-align: center;
+}
+
 
 /* Home styles */
 main {
@@ -155,18 +168,33 @@ main {
 
 #reserveBtn {
     display: block;
+    margin: 0 15rem 2rem 15rem;
     padding: .75rem;
     height: 3rem;
     font-size: larger;
     font-family: var(--main-title-font);
     background: linear-gradient(to left, var(--main-yellow), var(--main-orange));
     border-radius: 10px;
-    margin: 1rem 5rem;
     justify-content: center;
 }
 
-/* For home card elements */
-/* opacity: .5; */
+#home h1 {
+    margin: 2rem 10rem;
+    color: white;
+    font-size: xx-larger;
+    font-weight: bolder;
+    text-shadow: -2px 2px 1px #b8b8b8;
+    text-decoration: underline;
+}
+
+#home h2 {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+
+
+
 
 
 /* Rentals styles */
