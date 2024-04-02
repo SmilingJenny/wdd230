@@ -169,7 +169,8 @@ main {
 
 #reserveBtn {
     display: block;
-    margin: 0 15rem 2rem 15rem;
+    margin: 0 auto;
+    width: 30ch;
     padding: .75rem;
     height: 3rem;
     font-size: larger;
