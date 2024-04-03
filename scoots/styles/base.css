@@ -243,6 +243,10 @@ main {
     margin: 1rem 2rem;
 }
 
+#forecastTomorrow {
+    margin: 0 0 2rem 2rem;
+}
+
 .home .card:last-of-type {
     margin-bottom: 2rem;
 }

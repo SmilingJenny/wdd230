@@ -22,37 +22,40 @@ function displayWeather(data) {
     const temp = document.getElementById("temp")
     const hum = document.getElementById("hum")
     const highTemp = document.getElementById("high-temp")
-    const forecast = document.getElementById("forecast")
+    const forecastTomorrow = document.getElementById("forecastTomorrow")
 
     const tomorrowIndex = data.findIndex(function(object){
         let today = new Date()
-        today.setHours(3)
-        today.setMinutes(0)
-        today.setSeconds(0)
-        today.setMilliseconds(0)
+        today.setUTCHours(15)
+        today.setUTCMinutes(0)
+        today.setUTCSeconds(0)
+        today.setUTCMilliseconds(0)
         today.setDate(today.getDate() + 1)
     
-        let tomorrow = today
-        // console.log(today)
-        // console.log(tomorrow)
+        let tomorrow = today.getTime()
+        let objectTime = object.dt*1000
 
-        return object.dt_text == tomorrow
+        return objectTime == tomorrow
     })
 
-    // const tomorrowTemp = data[tomorrowIndex].main.temp
+    const tomorrowTemp = data[tomorrowIndex].main.temp
     
-    console.log(tomorrowIndex);
-    
-    // const img = document.createElement("img")
-    // const figCaption = document.createElement("figcaption")
+    const img = document.createElement("img")
+    const imgSrc = `https://openweathermap.org/img/w/${data[tomorrowIndex].weather[0].icon}.png`
+    const figCaption = document.createElement("figcaption")
+    const description = data[tomorrowIndex].weather[0].description
 
-    // img.setAttribute("src", data[].)
+    img.setAttribute("src", imgSrc)
+    img.setAttribute("alt", "Weather icon")
+    img.setAttribute("loading", "lazy")
+    figCaption.textContent = Math.round(tomorrowTemp)
+    figCaption.append(`°F - ${description}` )
 
     temp.textContent = Math.round(data[0].main.temp)
     hum.textContent = Math.round(data[0].main.humidity)
     highTemp.textContent = Math.round(data[0].main.temp)
-    // forecast.textContent = Math.round(data[].weather)
-
+    forecastTomorrow.appendChild(img)
+    forecastTomorrow.appendChild(figCaption)
 }
 
 
