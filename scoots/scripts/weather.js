@@ -23,39 +23,47 @@ function displayWeather(data) {
     const hum = document.getElementById("hum")
     const highTemp = document.getElementById("high-temp")
     const forecastTomorrow = document.getElementById("forecastTomorrow")
+    const img = document.createElement("img")
+    const figCaption = document.createElement("figcaption")
 
-    const tomorrowIndex = data.findIndex(function(object){
+    const tomorrowIndex = data.findIndex(function (object) {
         let today = new Date()
         today.setUTCHours(15)
         today.setUTCMinutes(0)
         today.setUTCSeconds(0)
         today.setUTCMilliseconds(0)
         today.setDate(today.getDate() + 1)
-    
+
         let tomorrow = today.getTime()
-        let objectTime = object.dt*1000
+        let objectTime = object.dt * 1000
 
         return objectTime == tomorrow
     })
-
     const tomorrowTemp = data[tomorrowIndex].main.temp
-    
-    const img = document.createElement("img")
     const imgSrc = `https://openweathermap.org/img/w/${data[tomorrowIndex].weather[0].icon}.png`
-    const figCaption = document.createElement("figcaption")
     const description = data[tomorrowIndex].weather[0].description
+    const capDesc = titleCase(description)
+
 
     img.setAttribute("src", imgSrc)
     img.setAttribute("alt", "Weather icon")
     img.setAttribute("loading", "lazy")
+    img.setAttribute("width", "50")
+    img.setAttribute("height", "50")
     figCaption.textContent = Math.round(tomorrowTemp)
-    figCaption.append(`°F - ${description}` )
+    figCaption.append(`°F - ${capDesc}`)
 
     temp.textContent = Math.round(data[0].main.temp)
     hum.textContent = Math.round(data[0].main.humidity)
     highTemp.textContent = Math.round(data[0].main.temp)
     forecastTomorrow.appendChild(img)
     forecastTomorrow.appendChild(figCaption)
+}
+
+function titleCase(desc) {
+    return desc.replace(/\b\w/g, function (char) {
+        return char.toUpperCase()
+    })
 }
 
 
