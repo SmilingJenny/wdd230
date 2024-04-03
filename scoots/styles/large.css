@@ -43,8 +43,12 @@
     }
 
     /* Home Styles */
-    #home .card {
+    .home .card {
         margin-left: 5rem;
         margin-right: 5rem;
+    }
+
+    .gallery img {
+        margin: 2rem;
     }
 }
