@@ -43,18 +43,21 @@ footer {
 }
 
 #tempBan.open {
-    display: block;
+    display: flex;
     background-color: var(--main-grey);
     padding: .25rem;
     text-align: end;
 }
 
 #tempBan p {
-    padding: 0 0 .5rem 0;
-    text-align: center;
+    margin: 0 auto;
+    padding: .75rem;
+    align-self:baseline;
     font-style: italic;
-    
+}
 
+#tempBtn {
+    margin-bottom: auto;
 }
 
 #tempBtn::before {
