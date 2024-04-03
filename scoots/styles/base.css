@@ -10,6 +10,7 @@
     --main-text-font: "Quicksand", sans-serif;
     --main-deep-blue: #046eb0;
     --main-light-blue: #3de6f5;
+    --main-deep-green: #418b24;
     --main-green: #50ad2b;
     --main-yellow: #ffcc33;
     --main-orange: #ff9020;
@@ -78,6 +79,7 @@ header {
 #logo {
     display: block;
     grid-column: 1/2;
+    border-radius: 10px;
 }
 
 #hamBtn {
@@ -119,7 +121,7 @@ nav {
     padding: 1rem .5rem;
     color: black;
     background-color: rgb(205, 205, 205);
-    font-size: large;
+    font-size: x-large;
     font-weight: bold;
     text-decoration-color: rgb(205, 205, 205);
     text-decoration-thickness: 3px;
@@ -175,8 +177,12 @@ h1 {
 /* Home styles */
 main {
     display: grid;
-    background-image: url("https://smilingjenny.github.io/wdd230/scoots/images/palm-trees-viola-pixabay-853-1280.webp");
-    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: linear-gradient(to top, var(--main-deep-blue), var(--main-light-blue), var(--main-deep-blue));
+    /* background: linear-gradient(to bottom, var(--main-deep-blue), var(--main-light-blue), var(--main-deep-green)); */
+    /* background-image: url("https://smilingjenny.github.io/wdd230/scoots/images/palm-trees-viola-pixabay-853-1280.webp"); */
+    /* background-size: cover; */
 }
 
 .home h1 {
@@ -184,8 +190,8 @@ main {
     color: white;
     font-size: xx-larger;
     font-weight: bolder;
-    text-shadow: -2px 2px 1px #b8b8b8;
-    text-decoration: underline;
+    /* text-shadow: -2px 2px 1px #b8b8b8; */
+    /* text-decoration: underline; */
 }
 
 #reserveBtn {
