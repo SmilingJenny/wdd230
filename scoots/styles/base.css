@@ -256,12 +256,13 @@ main {
 }
 
 
-
 /* Rentals styles */
+
 /* Reservations styles */
 /* Contact styles */
 /* Form Thanks styles */
 /* Attribution styles */
+
 
 /* Footer styles */
 footer {
@@ -296,4 +297,9 @@ footer {
     display: block;
     margin-bottom: .5rem;
     color: white;
+}
+
+#author {
+    /* Needed for smallest screen size */
+    padding: 0 .5rem;
 }
