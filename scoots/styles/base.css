@@ -41,6 +41,8 @@ footer {
 
 #tempBan {
     display: none;
+    margin: .5rem auto;
+    border-radius: 10px;
 }
 
 #tempBan.open {
@@ -125,6 +127,12 @@ nav {
     font-weight: bold;
     text-decoration-color: rgb(205, 205, 205);
     text-decoration-thickness: 3px;
+}
+
+#navBar.show li:first-child a {
+    margin-top: .5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 #navBar .active {
