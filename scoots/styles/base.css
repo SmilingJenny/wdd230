@@ -207,8 +207,8 @@ main {
 }
 
 .rentalInfo .card {
-    background-color: var(--main-light-blue);
-    opacity: 1;
+    background-color: white;
+    text-align: center;
 }
 
 .gallery {
