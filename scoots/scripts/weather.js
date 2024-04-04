@@ -8,6 +8,7 @@ async function weatherData() {
             // remove 
             console.log(data.list)
             displayWeather(data.list)
+            displayForecast(data.list)
         } else {
             throw Error(response.text())
         }
@@ -19,12 +20,42 @@ async function weatherData() {
 weatherData()
 
 function displayWeather(data) {
-    const temp = document.getElementById("temp")
-    const hum = document.getElementById("hum")
     const highTemp = document.getElementById("high-temp")
-    const forecastTomorrow = document.getElementById("forecastTomorrow")
+    const currWeatherPara = document.getElementById("currWeatherPara")
+    const currWeather = document.getElementById("currWeather")
+    const hum = document.getElementById("hum")
     const img = document.createElement("img")
-    const figCaption = document.createElement("figcaption")
+    const imgSrc = `https://openweathermap.org/img/w/${data[0].weather[0].icon}.png`
+    const figcaption = document.createElement("figcaption")
+    const description = data[0].weather[0].description
+    const capDesc = titleCase(description)
+    const today = new Date().toDateString()
+
+    img.setAttribute("src", imgSrc)
+    img.setAttribute("alt", "Weather icon")
+    img.setAttribute("loading", "lazy")
+    img.setAttribute("width", "50")
+    img.setAttribute("height", "50")
+    figcaption.textContent = Math.round(data[0].main.temp)
+    figcaption.append(`°F - ${capDesc}`)
+    hum.textContent = Math.round(data[0].main.humidity)
+
+    currWeatherPara.textContent = today.slice(0, -5)
+    highTemp.textContent = Math.round(data[0].main.temp)
+    currWeather.appendChild(img)
+    currWeather.appendChild(figcaption)
+}
+
+function displayForecast(data) {
+    const forecastPara = document.getElementById("forecastPara")
+    const forecastTomorrow = document.getElementById("forecastTomorrow")
+    const hum = document.getElementById("forecastHum")
+    const img = document.createElement("img")
+    const figcaption = document.createElement("figcaption")
+    // const today = new Date().toDateString()
+    const today = new Date()
+    const tomorrow = today.setDate(today.getDate() + 1)
+    const tomorrowString = new Date(tomorrow).toDateString()   
 
     const tomorrowIndex = data.findIndex(function (object) {
         let today = new Date()
@@ -44,21 +75,21 @@ function displayWeather(data) {
     const description = data[tomorrowIndex].weather[0].description
     const capDesc = titleCase(description)
 
-
     img.setAttribute("src", imgSrc)
     img.setAttribute("alt", "Weather icon")
     img.setAttribute("loading", "lazy")
     img.setAttribute("width", "50")
     img.setAttribute("height", "50")
-    figCaption.textContent = Math.round(tomorrowTemp)
-    figCaption.append(`°F - ${capDesc}`)
+    figcaption.textContent = Math.round(tomorrowTemp)
+    figcaption.append(`°F - ${capDesc}`)
 
-    temp.textContent = Math.round(data[0].main.temp)
-    hum.textContent = Math.round(data[0].main.humidity)
-    highTemp.textContent = Math.round(data[0].main.temp)
+    forecastPara.textContent = tomorrowString.slice(0, -5)
+    hum.textContent = Math.round(data[tomorrowIndex].main.humidity)
     forecastTomorrow.appendChild(img)
-    forecastTomorrow.appendChild(figCaption)
+    forecastTomorrow.appendChild(figcaption)
 }
+
+
 
 function titleCase(desc) {
     return desc.replace(/\b\w/g, function (char) {

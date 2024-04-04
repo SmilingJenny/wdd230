@@ -106,12 +106,20 @@
         <section class="weather card">
             <h2>Weather in Cozumel</h2>
             <p>To make the most of your time on our beautiful island, make sure to check the weather and plan ahead!</p>
-            <p>The current temperature is <span id="temp"></span>&deg;F.</p>
-            <p>The current humidity is: <span id="hum"></span>&deg;F.</p>
+            <!-- <div id="currWeatherDiv"> -->
+                <div>
+                <p>Current Weather Conditions</p>
+                <p id="currWeatherPara"></p>
+                <figure id="currWeather"></figure>
+                <p>The current humidity is: <span id="hum"></span>&deg;F.</p>
+            </div>
             <!-- <div id="forecastDiv"> -->
-            <p>Tomorrow's forecast for 3 PM UTC is:</p>
-            <figure id="forecastTomorrow"></figure>
-            <!-- </div> -->
+                <div>
+                <p>Tomorrow's forecast for 3PM UTC</p>
+                <p id="forecastPara"></p>
+                <figure id="forecastTomorrow"></figure>
+                <p>The tomorrow's humidity is: <span id="forecastHum"></span>&deg;F.</p>
+            </div>
         </section>
     </main>
 
