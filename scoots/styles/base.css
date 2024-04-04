@@ -228,10 +228,8 @@ main {
     border-radius: 10px;
 }
 
-.rentalInfo .outerCard {
-    background-color: white;
+.rentalInfo .innerCard {
     text-align: center;
-    border-radius: 20px;
 }
 
 .rentalInfo img {
@@ -276,10 +274,9 @@ main {
     text-align: center;
 }
 
-#weatherDisplay .outerCard {
+#weatherDisplay .innerCard {
+    /* changes card shape */
     margin: 1rem;
-    background-color: white;
-    border-radius: 20px;
 }
 
 #weatherDisplay h4 {
