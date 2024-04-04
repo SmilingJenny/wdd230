@@ -10,11 +10,13 @@
     --main-text-font: "Quicksand", sans-serif;
     --main-deep-blue: #046eb0;
     --main-light-blue: #3de6f5;
+    /* Remove if not used */
     --main-deep-green: #418b24;
     --main-green: #50ad2b;
     --main-yellow: #ffcc33;
     --main-orange: #ff9020;
-    --main-grey: rgb(205, 205, 205);
+    --main-deep-grey: rgb(205, 205, 205);
+    --main-light-grey: #f1f1f1;
 }
 
 #tempBan,
@@ -49,7 +51,7 @@ footer {
 
 #tempBan.open {
     display: flex;
-    background-color: var(--main-grey);
+    background-color: var(--main-deep-grey);
     padding: .25rem;
     text-align: end;
 }
@@ -185,7 +187,7 @@ h3 {
     padding: 1rem;
     border: 1px solid lightgray;
     border-radius: 10px;
-    background-color: #f1f1f1;
+    background-color: var(--main-light-grey);
 }
 
 main {
@@ -217,7 +219,7 @@ main {
     border-radius: 10px;
 }
 
-.rentalInfo {
+.rentalInfo .card {
     background-color: white;
     text-align: center;
 }
@@ -247,6 +249,7 @@ main {
     width: 100%;
     height: auto;
     max-width: 400px;
+    border-radius: 10px;
 }
 
 :is(.gallery p, .weather p) {
