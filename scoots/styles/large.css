@@ -42,6 +42,16 @@
         display: none;
     }
 
+
+    /* Base styles */
+    /* Remember to set img rule for pics */
+    /* img {
+    width: 100%;
+    height: auto;
+    max-width: ;
+    } */
+
+
     /* Home Styles */
     .home .card {
         margin-left: 5rem;
@@ -50,5 +60,31 @@
 
     .gallery img {
         margin: 2rem;
+    }
+
+    #weatherDisplay {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Rentals styles */
+    /* Reservations styles */
+    /* Contact styles */
+    /* Form Thanks styles */
+    /* Attribution styles */
+
+    
+    /* Footer styles */
+    footer {    
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact {
+        padding: 0;
+        border-right: 1px solid white;
+        border-bottom: none;
+    }
+
+    .author {
+        padding: 0;
     }
 }
