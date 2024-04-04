@@ -182,13 +182,20 @@ h3 {
     text-align: center;
 }
 
-/* Maybe make and in and a out card with different colors and corners */
-.card {
+.outerCard {
     margin: 1rem 3rem;
     padding: 1rem;
     border: 1px solid lightgray;
     border-radius: 15px;
     background-color: var(--main-light-grey);
+}
+
+.innerCard {
+    margin: 1rem 3rem;
+    padding: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    background-color: white;
 }
 
 main {
@@ -207,6 +214,7 @@ main {
     width: 100%;
     height: auto;
     max-width: ;
+    border-radius: 20px;
 } */
 
 
@@ -220,7 +228,7 @@ main {
     border-radius: 10px;
 }
 
-.rentalInfo .card {
+.rentalInfo .outerCard {
     background-color: white;
     text-align: center;
     border-radius: 20px;
@@ -268,7 +276,7 @@ main {
     text-align: center;
 }
 
-#weatherDisplay .card {
+#weatherDisplay .outerCard {
     margin: 1rem;
     background-color: white;
     border-radius: 20px;
