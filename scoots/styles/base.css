@@ -254,13 +254,28 @@ main {
 }
 
 .weather {
+    /* To give a little more space before footer */
     margin-bottom: 2rem;
 }
 
-#forecastTomorrow {
-    margin-bottom: 2rem;
-    margin-left: 2rem;
+#weatherDisplay {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
 }
+
+#weatherDisplay .card {
+    margin: 1rem;
+    background-color: white;
+}
+
+#weatherDisplay figcaption {
+    color: var(--main-deep-blue);
+}
+
+/* #currWeatherDiv {
+} */
+
 
 
 /* Rentals styles */

@@ -52,7 +52,6 @@ function displayForecast(data) {
     const hum = document.getElementById("forecastHum")
     const img = document.createElement("img")
     const figcaption = document.createElement("figcaption")
-    // const today = new Date().toDateString()
     const today = new Date()
     const tomorrow = today.setDate(today.getDate() + 1)
     const tomorrowString = new Date(tomorrow).toDateString()   
@@ -88,8 +87,6 @@ function displayForecast(data) {
     forecastTomorrow.appendChild(img)
     forecastTomorrow.appendChild(figcaption)
 }
-
-
 
 function titleCase(desc) {
     return desc.replace(/\b\w/g, function (char) {
