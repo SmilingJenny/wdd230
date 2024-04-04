@@ -182,6 +182,7 @@ h3 {
     text-align: center;
 }
 
+/* Maybe make and in and a out card with different colors and corners */
 .card {
     margin: 1rem 3rem;
     padding: 1rem;
@@ -250,7 +251,6 @@ main {
     width: 100%;
     height: auto;
     max-width: 400px;
-    /* border-radius: 10px; */
     border-radius: 20px;
 }
 
