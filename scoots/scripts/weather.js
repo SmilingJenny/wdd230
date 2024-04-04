@@ -23,7 +23,10 @@ function displayWeather(data) {
     const highTemp = document.getElementById("high-temp")
     const currWeatherPara = document.getElementById("currWeatherPara")
     const currWeather = document.getElementById("currWeather")
+    const temp = document.getElementById("currTemp")
+    const desc = document.getElementById("currDesc")
     const hum = document.getElementById("hum")
+    
     const img = document.createElement("img")
     const imgSrc = `https://openweathermap.org/img/w/${data[0].weather[0].icon}.png`
     const figcaption = document.createElement("figcaption")
@@ -36,8 +39,9 @@ function displayWeather(data) {
     img.setAttribute("loading", "lazy")
     img.setAttribute("width", "50")
     img.setAttribute("height", "50")
-    figcaption.textContent = Math.round(data[0].main.temp)
-    figcaption.append(`°F - ${capDesc}`)
+    figcaption.textContent = data[0].weather[0].main 
+    temp.textContent = Math.round(data[0].main.temp)
+    desc.textContent = capDesc
     hum.textContent = Math.round(data[0].main.humidity)
 
     currWeatherPara.textContent = today.slice(0, -5)
@@ -49,7 +53,10 @@ function displayWeather(data) {
 function displayForecast(data) {
     const forecastPara = document.getElementById("forecastPara")
     const forecastTomorrow = document.getElementById("forecastTomorrow")
+    const temp = document.getElementById("forecastTemp")
+    const desc = document.getElementById("forecastDesc")
     const hum = document.getElementById("forecastHum")
+    
     const img = document.createElement("img")
     const figcaption = document.createElement("figcaption")
     const today = new Date()
@@ -79,11 +86,12 @@ function displayForecast(data) {
     img.setAttribute("loading", "lazy")
     img.setAttribute("width", "50")
     img.setAttribute("height", "50")
-    figcaption.textContent = Math.round(tomorrowTemp)
-    figcaption.append(`°F - ${capDesc}`)
-
+    figcaption.textContent = data[tomorrowIndex].weather[0].main
     forecastPara.textContent = tomorrowString.slice(0, -5)
+    temp.textContent = Math.round(tomorrowTemp)
+    desc.textContent = capDesc
     hum.textContent = Math.round(data[tomorrowIndex].main.humidity)
+
     forecastTomorrow.appendChild(img)
     forecastTomorrow.appendChild(figcaption)
 }
