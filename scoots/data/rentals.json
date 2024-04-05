@@ -5,40 +5,40 @@
             "imgAlt": "Honda Metro Scooter",
             "name": "Honda Metro Scooter",
             "maxPeople": "1",
-            "rHalfPrice": "20",
-            "rWholePrice": "30",
-            "wHalfPrice": "25",
-            "wWholePrice": "35"
+            "rHalfPrice": "$20",
+            "rWholePrice": "$30",
+            "wHalfPrice": "$25",
+            "wWholePrice": "$35"
         },
         {
             "imgUrl": "images/rentals/honda-dio-scooter-75.webp",
             "imgAlt": "Honda Dio Scooter",
             "name": "Honda Dio Scooter",
             "maxPeople": "2",
-            "rHalfPrice": "30",
-            "rWholePrice": "40",
-            "wHalfPrice": "35",
-            "wWholePrice": "45"
+            "rHalfPrice": "$30",
+            "rWholePrice": "$40",
+            "wHalfPrice": "$35",
+            "wWholePrice": "$45"
         },
         {
             "imgUrl": "images/rentals/honda-pcx150-scooter-75.webp",
             "imgAlt": "Honda PCX150 Scooter",
             "name": "Honda PCX150 Scooter",
             "maxPeople": "2",
-            "rHalfPrice": "40",
-            "rWholePrice": "50",
-            "wHalfPrice": "45",
-            "wWholePrice": "55"
+            "rHalfPrice": "$40",
+            "rWholePrice": "$50",
+            "wHalfPrice": "$45",
+            "wWholePrice": "$55"
         },
         {
             "imgUrl": "images/rentals/honda-pioneer-atv-75.webp",
             "imgAlt": "Honda Pioneer ATV",
             "name": "Honda Pioneer ATV",
             "maxPeople": "4",
-            "rHalfPrice": "50",
-            "rWholePrice": "70",
-            "wHalfPrice": "60",
-            "wWholePrice": "80"
+            "rHalfPrice": "$50",
+            "rWholePrice": "$70",
+            "wHalfPrice": "$60",
+            "wWholePrice": "$80"
         },
         {
             "imgUrl": "images/rentals/jeep-wrangler-4door-75.webp",

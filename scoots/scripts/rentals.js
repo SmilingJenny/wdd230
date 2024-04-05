@@ -12,7 +12,10 @@ function displayRentals(rentals) {
     rentals.forEach(object => {
         const tbody = document.querySelector("tbody")
         const tr = document.createElement("tr")
-        const url = document.createElement("td")
+
+
+        const picture = document.createElement("td")
+        const img = document.createElement("img")
         const name = document.createElement("td")
         const maxPeople = document.createElement("td")
         const rHalfPrice = document.createElement("td")
@@ -20,7 +23,11 @@ function displayRentals(rentals) {
         const wHalfPrice = document.createElement("td")
         const wWholePrice = document.createElement("td")
 
-        url.textContent = object.url
+        img.setAttribute("src", object.imgUrl)
+        img.setAttribute("alt", object.imgAlt)
+        img.setAttribute("loading", "lazy")
+        img.setAttribute("width", "75")
+        picture.appendChild(img)
         name.textContent = object.name
         maxPeople.textContent = object.maxPeople
         rHalfPrice.textContent = object.rHalfPrice
@@ -28,9 +35,14 @@ function displayRentals(rentals) {
         wHalfPrice.textContent = object.wHalfPrice
         wWholePrice.textContent = object.wWholePrice
 
-        console.log(rHalfPrice);
-        // tr.appendChild(url)
-        // tbody.appendChild(tr)
+        tr.appendChild(picture)
+        tr.appendChild(name)
+        tr.appendChild(maxPeople)
+        tr.appendChild(rHalfPrice)
+        tr.appendChild(rWholePrice)
+        tr.appendChild(wHalfPrice)
+        tr.appendChild(wWholePrice)
+        tbody.appendChild(tr)
 
 
 
