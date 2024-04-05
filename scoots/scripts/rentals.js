@@ -12,8 +12,6 @@ function displayRentals(rentals) {
     rentals.forEach(object => {
         const tbody = document.querySelector("tbody")
         const tr = document.createElement("tr")
-
-
         const picture = document.createElement("td")
         const img = document.createElement("img")
         const name = document.createElement("td")
@@ -43,10 +41,6 @@ function displayRentals(rentals) {
         tr.appendChild(wHalfPrice)
         tr.appendChild(wWholePrice)
         tbody.appendChild(tr)
-
-
-
-
     });
 
 }
