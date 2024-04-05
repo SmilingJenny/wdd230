@@ -298,11 +298,15 @@ main {
     border-spacing: 0;
 }
 
+.rentals thead th {
+    color: var(--main-deep-blue);
+}
+
 .rentals :is(th, td) {
     padding: .5rem;
 }
 
-.rentals thead:nth-child(n) {
+.rentals thead tr:last-of-type th {
     border-bottom: 1px solid var(--main-deep-grey);
 }
 
