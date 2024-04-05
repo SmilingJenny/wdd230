@@ -296,14 +296,25 @@ main {
 .rentals table {
     padding: 1rem;
     border-spacing: 0;
+    /* text-align: center; */
 }
 
-.rentals thead th {
+.rentals thead tr:last-of-type {
     color: var(--main-deep-blue);
+    font-size: larger;
 }
 
 .rentals :is(th, td) {
     padding: .5rem;
+}
+
+.rentals td:nth-of-type(1n+3) {
+    text-align: center;
+}
+
+.rentals tbody > tr td:nth-of-type(2) {
+    padding-left: 2rem;
+    font-weight: 700;
 }
 
 .rentals thead tr:last-of-type th {
