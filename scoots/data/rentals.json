@@ -1,58 +1,64 @@
 {
     "rentals": [
         {
-            "url": "images/rentals/honda-metropolitan-scooter-75.webp",
+            "imgUrl": "images/rentals/honda-metropolitan-scooter-75.webp",
+            "imgAlt": "Honda Metro Scooter",
             "name": "Honda Metro Scooter",
             "maxPeople": "1",
-            "rHalf": "20",
-            "rWhole": "30",
-            "wHalf": "25",
-            "wWhole": "35"
+            "rHalfPrice": "20",
+            "rWholePrice": "30",
+            "wHalfPrice": "25",
+            "wWholePrice": "35"
         },
         {
-            "url": "images/rentals/honda-dio-scooter-75.webp",
+            "imgUrl": "images/rentals/honda-dio-scooter-75.webp",
+            "imgAlt": "Honda Dio Scooter",
             "name": "Honda Dio Scooter",
             "maxPeople": "2",
-            "rHalf": "30",
-            "rWhole": "40",
-            "wHalf": "35",
-            "wWhole": "45"
+            "rHalfPrice": "30",
+            "rWholePrice": "40",
+            "wHalfPrice": "35",
+            "wWholePrice": "45"
         },
         {
-            "url": "images/rentals/honda-pcx150-scooter-75.webp",
+            "imgUrl": "images/rentals/honda-pcx150-scooter-75.webp",
+            "imgAlt": "Honda PCX150 Scooter",
             "name": "Honda PCX150 Scooter",
             "maxPeople": "2",
-            "rHalf": "40",
-            "rWhole": "50",
-            "wHalf": "45",
-            "wWhole": "55"
+            "rHalfPrice": "40",
+            "rWholePrice": "50",
+            "wHalfPrice": "45",
+            "wWholePrice": "55"
         },
         {
-            "url": "images/rentals/honda-pioneer-atv-75.webp",
+            "imgUrl": "images/rentals/honda-pioneer-atv-75.webp",
+            "imgAlt": "Honda Pioneer ATV",
             "name": "Honda Pioneer ATV",
             "maxPeople": "4",
-            "rHalf": "50",
-            "rWhole": "70",
-            "wHalf": "60",
-            "wWhole": "80"
+            "rHalfPrice": "50",
+            "rWholePrice": "70",
+            "wHalfPrice": "60",
+            "wWholePrice": "80"
         },
         {
-            "url": "images/rentals/jeep-wrangler-4door-75.webp",
+            "imgUrl": "images/rentals/jeep-wrangler-4door-75.webp",
+            "imgAlt": "Jeep Wrangler 4 Door",
             "name": "Jeep Wrangler - 4 door with a/c",
             "maxPeople": "5",
-            "rHalf": "70",
-            "rWhole": "100",
-            "wHalf": "85",
-            "wWhole": "125"
+            "rHalfPrice": "70",
+            "rWholePrice": "100",
+            "wHalfPrice": "85",
+            "wWholePrice": "125"
         },
         {
-            "url": "images/rentals/jeep-wrangler-2door-75.webp",
+            "imgUrl": "images/rentals/jeep-wrangler-2door-75.webp",
+            "imgAlt": "Jeep Wrangler 2 Door",
             "name": "Jeep Wrangler - 2 door",
             "maxPeople": "4",
-            "rHalf": "60",
-            "rWhole": "85",
-            "wHalf": "70",
-            "wWhole": "90"
+            "rHalfPrice": "60",
+            "rWholePrice": "85",
+            "wHalfPrice": "70",
+            "wWholePrice": "90"
         }
     ]
 }
