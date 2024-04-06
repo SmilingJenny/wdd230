@@ -332,6 +332,54 @@ main {
     border-radius: 20px;
 } */
 
+form {
+    padding: 1rem;
+}
+
+form>label input {
+    margin: 1rem 0;
+}
+
+fieldset, form>label input {
+    margin-top: 3px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 40rem;
+}
+
+legend {
+    padding: 0 .5em;
+}
+
+fieldset label {
+    display: block;
+}
+
+fieldset label input {
+    margin: .75rem;
+}
+
+
+fieldset {
+    margin-bottom: 1rem;
+}
+
+#reserveSubmit {
+    margin: 1rem auto 0 auto;
+    padding: .75rem 3rem;
+    font-weight: 600;
+    font-size: larger;
+    background: linear-gradient(to left, var(--main-yellow), var(--main-orange));
+    border-radius: 10px;
+    border: none;
+}
+
+
+
+/* 
+#reservationForm :is(label, input) {
+    display: block;
+} */
 
 
 
