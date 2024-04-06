@@ -285,18 +285,10 @@ main {
 
 
 /* Rentals styles */
-/* Remember to set img rule for pics */
-/* img {
-    width: 100%;
-    height: auto;
-    max-width: ;
-    border-radius: 20px;
-} */
-
 .rentals table {
+    width: auto;
     padding: 1rem;
     border-spacing: 0;
-    /* text-align: center; */
 }
 
 .rentals thead tr:last-of-type {
@@ -325,13 +317,22 @@ main {
     border-bottom: 1px solid var(--main-deep-grey);
 }
 
+/* maybe add js to link to reservations when clicked. ++ If clicking an option selects in on the reservations page */
 .rentals tbody tr:hover {
     background-color: var(--main-deep-grey);
 }
 
 
-
 /* Reservations styles */
+/* Remember to set img rule for pics */
+/* img {
+    width: 100%;
+    height: auto;
+    max-width: ;
+    border-radius: 20px;
+} */
+
+
 /* Contact styles */
 /* Form Thanks styles */
 /* Attribution styles */
