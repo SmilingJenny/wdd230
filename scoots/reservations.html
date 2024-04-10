@@ -47,21 +47,61 @@
     <main>
         <!-- change -->
         <h1>Scoots Reservations</h1>
+        <section class="servAgree outerCard">
+            <h2>Service Agreement</h2>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul>
+        </section>
+
         <section class="reservations outerCard">
             <h2>Rental Reservation</h2>
             <form method="get" action="reservation-thanks.html" id="reservationForm">
-                    <fieldset>
-                        <legend>Rental Type</legend>
-                        <label><input type="radio" id="metro" name="metro" value="metro">Honda Metro Scooter</label>
-                        <label><input type="radio" id="dio" name="dio" value="dio">Honda Dio Scooter</label>
-                        <label><input type="radio" id="pcx" name="pcx" value="pcx150">Honda PCX150 Scooter</label>
-                        <label><input type="radio" id="pioneer" name="pioneer" value="pioneer">Honda Pioneer ATV</label>
-                        <label><input type="radio" id="jeep4dr" name="jeep4dr" value="jeep4dr">Jeep Wrangler 4 Door with a/c</label>
-                        <label><input type="radio" id="jeep2dr" name="jeep2dr" value="jeep2dr">Jeep Wrangler 2 Door</label>
-                    </fieldset>
-                    <label>First Name*<input type="text" id="fname" name="fname" required></label>
-                    <label>Last Name*<input type="text" id="lname" name="lname" required></label>
-                    <label><input type="submit" id="reserveSubmit" name="reserveSubmit" value="Reserve Your Rental"></label>
+                <label>Rental Date*<input type="datetime-local" id="Date" name="date" required></label>
+                <fieldset>
+                    <legend>Rental Period*</legend>
+                    <label><input type="radio" id="halfDay" name="period" value="half day" required>Half
+                        Day</label>
+                    <label><input type="radio" id="fullDay" name="period" value="full day" required>Full
+                        Day</label>
+                </fieldset>
+                <!-- <label>Rental Period*<input type="radio" id="halfDay" name="period" value="half day" required>Half Day</label>
+                <label>Rental Period*<input type="radio" id="fullDay" name="period" value="full day" required>Full Day</label> -->
+                <fieldset>
+                    <legend>Rental Type*</legend>
+                    <label><input type="radio" id="metro" name="rentalType" value="metro">Honda Metro Scooter</label>
+                    <label><input type="radio" id="dio" name="rentalType" value="dio">Honda Dio Scooter</label>
+                    <label><input type="radio" id="pcx" name="rentalType" value="pcx150">Honda PCX150 Scooter</label>
+                    <label><input type="radio" id="pioneer" name="rentalType" value="pioneer">Honda Pioneer ATV</label>
+                    <label><input type="radio" id="jeep4dr" name="rentalType" value="jeep4dr">Jeep Wrangler 4 Door with
+                        a/c</label>
+                    <label><input type="radio" id="jeep2dr" name="rentalType" value="jeep2dr">Jeep Wrangler 2
+                        Door</label>
+                </fieldset>
+                <label>How many of rental type<input type="number" id="quantity" name="quantity"
+                        placeholder="Enter a quantity. Up to 4 allowed per rental" required></label>
+                <label>First Name*<input type="text" id="fname" name="fname" required></label>
+                <label>Last Name*<input type="text" id="lname" name="lname" required></label>
+                <label>Phone Number<input type="tel" id="fname" name="fname" placeholder="ex. (1+) 555-555-5555"
+                        required></label>
+                <label>Email<input type="email" id="email" name="email" placeholder="myEmail@gmail.com"
+                        required></label>
+                <label>Home state or Country?<input type="text" id="Home" name="home"
+                        placeholder="What state or country do you reside in?" required></label>
+                <label>Cruise line if applicable<input type="text" id="cruise" name="cruise"></label>
+                <label>Special accommodations / comments such as shuttle service request. Please provide hotel or port
+                    name.<input type="text" id="comments" name="comments"></label>
+
+                <label><input type="submit" id="reserveSubmit" name="reserveSubmit" value="Reserve Your Rental"></label>
             </form>
 
 

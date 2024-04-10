@@ -332,7 +332,17 @@ main {
     border-radius: 20px;
 } */
 
+.servAgree ul {
+    padding: 1rem 2rem;
+}
+
+.servAgree li {
+    padding: .5rem;
+    list-style-type: disc;
+}
+
 form {
+    display: grid;
     padding: 1rem;
 }
 
