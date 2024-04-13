@@ -348,11 +348,9 @@ main {
     padding: 1rem;
 }
 
-
-#reservationForm :is(label,form>label input, textarea) {
+.reserve form :is(label,form>label input, textarea) {
     display: block;
 }
-
 
 .reserve form>label input {
     margin: 1rem 0;
@@ -364,6 +362,7 @@ main {
     width: 100%;
     max-width: auto;
 }
+
 .reserve fieldset {
     margin-bottom: 1rem;
 }
@@ -372,6 +371,7 @@ main {
     padding: 0 .5em;
 }
 
+/* do I need this rule? */
 .reserve fieldset label {
     display: block;
 }
@@ -395,6 +395,52 @@ main {
 }
 
 /* Contact Styles */
+.contactInfo p {
+    margin: 1rem 0 .5rem 0;
+}
+
+.contactForm form {
+    display: grid;
+    padding: 1rem;
+}
+
+.contactForm :is(fieldset label, fieldset label input, label input, textarea) {
+    display: block;
+}
+
+.contactForm form :is(fieldset label input, label input, textarea) {
+    margin-top: 3px;
+    padding: .75rem;
+    width: 100%;
+    max-width: auto;
+}
+
+.contactForm fieldset {
+    margin-bottom: 1rem;
+}
+
+.contactForm fieldset label {
+    margin: 1rem 0;
+}
+
+.contactForm legend {
+    padding: 0 .5em;
+}
+
+.contactForm textarea {
+    resize: none;
+}
+
+#contactSubmit {
+    margin: 1rem auto 0 auto;
+    padding: .75rem 3rem;
+    font-weight: 600;
+    font-size: larger;
+    background: linear-gradient(to left, var(--main-yellow), var(--main-orange));
+    border-radius: 10px;
+    border: none;
+}
+
 
 /* Reservation and Contact Thank You Page Styles */
 .thanks section {
