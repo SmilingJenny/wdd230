@@ -149,7 +149,7 @@ nav {
 }
 
 
-/* Base styles */
+/* Base Styles */
 button {
     border: none;
     background: none;
@@ -218,7 +218,7 @@ main {
 } */
 
 
-/* Home styles */
+/* Home Styles */
 #reserveBtn {
     margin: 0 auto 2rem auto;
     padding: .75rem 3rem;
@@ -284,7 +284,7 @@ main {
 }
 
 
-/* Rentals styles */
+/* Rentals Styles */
 .rentals table {
     width: auto;
     padding: 1rem;
@@ -323,7 +323,7 @@ main {
 }
 
 
-/* Reservations styles */
+/* Reservations Styles */
 .servAgree p {
     padding: 1rem;
     font-style: italic;
@@ -394,13 +394,24 @@ main {
     border: none;
 }
 
+/* Contact Styles */
 
-/* Contact styles */
-/* Form Thanks styles */
-/* Attribution styles */
+/* Reservation and Contact Thank You Page Styles */
+.thanks section {
+    text-align: center;
+    font-size: larger;
+    color: var(--main-deep-blue);
+}
+
+.thanks p {
+    margin: .5rem;
+}
 
 
-/* Footer styles */
+/* Attribution Styles */
+
+
+/* Footer Styles */
 footer {
     display: grid;
     padding: .5rem;
