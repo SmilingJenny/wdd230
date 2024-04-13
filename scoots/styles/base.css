@@ -6,6 +6,7 @@
 }
 
 :root {
+    /* Remove if not used */
     --main-title-font: "Lobster", sans-serif;
     --main-text-font: "Quicksand", sans-serif;
     --main-deep-blue: #046eb0;
@@ -209,21 +210,15 @@ main {
     /* background-size: cover; */
 }
 
-/* Remember to set img rule for pics */
-/* img {
-    width: 100%;
-    height: auto;
-    max-width: ;
-    border-radius: 20px;
-} */
-
 
 /* Home Styles */
 #reserveBtn {
     margin: 0 auto 2rem auto;
     padding: .75rem 3rem;
+    font-family: var(--main-text-font);
     font-size: larger;
-    font-family: var(--main-title-font);
+    font-weight: bold;
+    font-style: italic;
     background: linear-gradient(to left, var(--main-yellow), var(--main-orange));
     border-radius: 10px;
 }
@@ -352,8 +347,10 @@ main {
     display: block;
 }
 
-.reserve form>label input {
-    margin: 1rem 0;
+.reserve form>label input, textarea {
+    margin: 1.5rem 0;
+    border: 1px solid var(--main-deep-grey);
+    border-radius: 15px;
 }
 
 .reserve :is(fieldset, form>label input, textarea) {
@@ -364,7 +361,9 @@ main {
 }
 
 .reserve fieldset {
-    margin-bottom: 1rem;
+    margin: 1.5rem 0;
+    border: 1px solid var(--main-deep-blue);
+    border-radius: 15px;
 }
 
 .reserve legend {
@@ -394,25 +393,31 @@ main {
     border: none;
 }
 
-/* Contact Styles */
-/* .contactInfo p {
-    margin: 1rem 0 .5rem 0;
-} */
 
-.locations p {
+/* Contact Styles */
+.locations h2 + p {
     margin: 1rem 0 .5rem 0;
+    font-size: large;
 }
 
 .locations li {
     margin-left: 2rem;
-    padding: .25rem 0;
+    padding: .5rem 0;
     list-style-type: disc;
 }
 
+.locations li p {
+    margin: .5rem;
+}
+.locations li>b {
+    color: var(--main-deep-blue);
+}
+
 .locations iframe {
-    margin: 2rem 0 1rem 0;
+    display: grid;
+    margin: 1rem auto;
     border: 1px solid var(--main-light-grey);
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .contactForm form {
@@ -433,14 +438,21 @@ main {
 
 .contactForm fieldset {
     margin-bottom: 1rem;
+    border: 1px solid var(--main-deep-blue);
+    border-radius: 15px;
+}
+
+.contactForm legend {
+    padding: 0 .5em;
 }
 
 .contactForm fieldset label {
     margin: 1rem 0;
 }
 
-.contactForm legend {
-    padding: 0 .5em;
+.contactForm fieldset input, textarea {
+    border: 1px solid var(--main-deep-grey);
+    border-radius: 15px;
 }
 
 .contactForm textarea {
