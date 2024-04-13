@@ -411,7 +411,7 @@ main {
 
 .locations iframe {
     margin: 2rem 0 1rem 0;
-    border-color: black;
+    border: 1px solid var(--main-light-grey);
     border-radius: 20px;
 }
 
