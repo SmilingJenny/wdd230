@@ -282,6 +282,10 @@ h3 {
 
 
 /* Rentals Styles */
+.rentals .innerCard {
+    margin: 1rem 5rem 2rem 5rem;
+}
+
 .rentals table {
     width: auto;
     padding: 1rem;
@@ -322,7 +326,8 @@ h3 {
 
 /* Reservations Styles */
 .servAgree p {
-    padding: 1rem;
+    padding: 0;
+    margin: 0;
     font-style: italic;
 }
 
@@ -402,8 +407,11 @@ h3 {
     font-size: large;
 }
 
+.locations ul {
+    padding: .5rem 2rem 1rem 2rem;
+}
+
 .locations li {
-    margin-left: 2rem;
     padding: .5rem 0;
     list-style-type: disc;
 }
@@ -412,6 +420,7 @@ h3 {
     margin: .5rem;
     text-align: left;
 }
+
 .locations li>b {
     color: var(--main-deep-blue);
 }
