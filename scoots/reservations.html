@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- change -->
     <title>Scoots Reservations</title>
-    <!-- change -->
     <meta name="description"
         content="A reservations page on Scoots site - Built by Jennifer Walton for a BYU-I WDD 230 Final Project.">
     <meta name="author" content="Jennifer Walton">
@@ -24,7 +22,6 @@
     <meta property="og:type" content="website">
     <meta property="og:image"
         content="https://smilingjenny.github.io/wdd230/scoots/images/scooters-by-beach-caleb-george-unsplash-meta-og.webp">
-    <!-- change -->
     <meta property="og:url" content="https://smilingjenny.github.io/wdd230/scoots/reservations.html">
 </head>
 
@@ -35,7 +32,6 @@
         <button id="hamBtn" class="material-symbols-outlined" aria-label="Nav Menu."></button>
         <nav>
             <ul id="navBar">
-                <!-- change -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="rentals.html">Rentals</a></li>
                 <li><a href="#" class="active">Reservations</a></li>
@@ -45,7 +41,6 @@
     </header>
 
     <main>
-        <!-- change -->
         <h1>Scoots Reservations</h1>
         <section class="servAgree outerCard">
             <h2>Service Agreement</h2>
@@ -69,7 +64,7 @@
 
         <section class="reserve outerCard">
             <h2>Rental Reservation</h2>
-            <form method="get" action="reservation-thanks.html" id="reservationForm">
+            <form method="get" action="reservation-thanks.html">
                 <label>Rental Date*<input type="datetime-local" id="date" name="date" required></label>
                 <fieldset>
                     <legend>Rental Period*</legend>
@@ -99,12 +94,10 @@
                 <label>Email<input type="email" id="email" name="email" placeholder="myEmail@gmail.com"></label>
                 <label>Home state or Country?<input type="text" id="home" name="home"
                         placeholder="What state or country do you reside in?"></label>
-                <label>Special accommodations / comments<textarea id="comments" name="comments" rows="6" cols="40" placeholder="If requesting shuttle service request, please provide your hotel, or cruise line and port name."></textarea></label>
+                <label>Special accommodations / comments<textarea id="formComment" name="formComment" rows="6" cols="40" placeholder="If requesting shuttle service request, please provide your hotel, or cruise line and port name."></textarea></label>
 
                 <label><input type="submit" id="reserveSubmit" name="reserveSubmit" value="Reserve Your Rental"></label>
             </form>
-
-
         </section>
     </main>
 
@@ -128,7 +121,6 @@
             <p>Site by Jennifer Walton for BYU-I WDD 230</p>
         </div>
     </footer>
-    <!-- change? -->
     <script src="scripts/script.js"></script>
 </body>
 

@@ -5,8 +5,6 @@ async function weatherData() {
         const response = await fetch(weatherUrl)
         if (response.ok) {
             const data = await response.json()
-            // remove 
-            console.log(data.list)
             displayWeather(data.list)
             displayForecast(data.list)
         } else {

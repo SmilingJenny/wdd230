@@ -3,7 +3,6 @@ async function getRentals() {
     const url = "https://smilingjenny.github.io/wdd230/scoots/data/rentals.json"
     const response = await fetch(url)
     const results = await response.json()
-    console.log(results);
     displayRentals(results.rentals)
 }
 getRentals()
