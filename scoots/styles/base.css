@@ -151,6 +151,18 @@ nav {
 
 
 /* Base Styles */
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: linear-gradient(to top, var(--main-deep-blue), var(--main-light-blue), var(--main-deep-blue));
+    /* background: linear-gradient(to bottom, var(--main-deep-blue), var(--main-light-blue), var(--main-deep-green)); */
+    /* background-image: url("https://smilingjenny.github.io/wdd230/scoots/images/palm-trees-viola-pixabay-853-1280.webp"); */
+    /* background-size: cover; */
+}
+
 button {
     border: none;
     background: none;
@@ -191,6 +203,10 @@ h3 {
     background-color: var(--main-light-grey);
 }
 
+.outerCard p {
+    text-align: center;
+}
+
 .innerCard {
     margin: 1rem 3rem;
     padding: 1rem;
@@ -199,16 +215,7 @@ h3 {
     background-color: white;
 }
 
-main {
-    display: grid;
-    justify-content: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background: linear-gradient(to top, var(--main-deep-blue), var(--main-light-blue), var(--main-deep-blue));
-    /* background: linear-gradient(to bottom, var(--main-deep-blue), var(--main-light-blue), var(--main-deep-green)); */
-    /* background-image: url("https://smilingjenny.github.io/wdd230/scoots/images/palm-trees-viola-pixabay-853-1280.webp"); */
-    /* background-size: cover; */
-}
+
 
 
 /* Home Styles */
@@ -267,11 +274,6 @@ main {
 #weatherDisplay {
     display: grid;
     text-align: center;
-}
-
-#weatherDisplay .innerCard {
-    /* changes card shape */
-    margin: 1rem;
 }
 
 #weatherDisplay h4 {
@@ -408,6 +410,7 @@ main {
 
 .locations li p {
     margin: .5rem;
+    text-align: left;
 }
 .locations li>b {
     color: var(--main-deep-blue);
