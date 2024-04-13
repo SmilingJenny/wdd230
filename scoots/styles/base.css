@@ -324,16 +324,13 @@ main {
 
 
 /* Reservations styles */
-/* Remember to set img rule for pics */
-/* img {
-    width: 100%;
-    height: auto;
-    max-width: ;
-    border-radius: 20px;
-} */
+.servAgree p {
+    padding: 1rem;
+    font-style: italic;
+}
 
 .servAgree ul {
-    padding: 1rem 2rem;
+    padding: .5rem 2rem 1rem 2rem;
 }
 
 .servAgree li {
@@ -341,59 +338,61 @@ main {
     list-style-type: disc;
 }
 
-form {
+.servAgree h4 {
+    margin-top: 1rem;
+    margin-left: .75rem;
+}
+
+.reserve form {
     display: grid;
     padding: 1rem;
 }
 
-form>label input {
-    margin: 1rem 0;
-}
 
-fieldset, form>label input {
-    margin-top: 3px;
-    padding: .75rem;
-    width: 100%;
-    max-width: 40rem;
-}
-
-legend {
-    padding: 0 .5em;
-}
-
-fieldset label {
+#reservationForm :is(label,form>label input, textarea) {
     display: block;
 }
 
-fieldset label input {
+
+.reserve form>label input {
+    margin: 1rem 0;
+}
+
+.reserve :is(fieldset, form>label input, textarea) {
+    margin-top: 3px;
+    padding: .75rem;
+    width: 100%;
+    max-width: auto;
+}
+.reserve fieldset {
+    margin-bottom: 1rem;
+}
+
+.reserve legend {
+    padding: 0 .5em;
+}
+
+.reserve fieldset label {
+    display: block;
+}
+
+.reserve fieldset label input {
     margin: .75rem;
 }
 
-
-fieldset {
-    margin-bottom: 1rem;
+.reserve textarea {
+    resize: none;
 }
 
 #reserveSubmit {
     margin: 1rem auto 0 auto;
-    padding: .75rem 3rem;
+    padding: .75rem 0;
     font-weight: 600;
     font-size: larger;
     background: linear-gradient(to left, var(--main-yellow), var(--main-orange));
     border-radius: 10px;
     border: none;
 }
-
-
-
-/* 
-#reservationForm :is(label, input) {
-    display: block;
-} */
-
-
-
-
 
 
 /* Contact styles */

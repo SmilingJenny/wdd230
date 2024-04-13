@@ -30,7 +30,7 @@
 
 <body>
     <header>
-        <a href="#"><img id="logo" src="images/logo/logo-color-250.webp" alt="Scoots Logo" loading="lazy" width="250"
+        <a href="index.html"><img id="logo" src="images/logo/logo-color-250.webp" alt="Scoots Logo" loading="lazy" width="250"
                 height="113"></a>
         <button id="hamBtn" class="material-symbols-outlined" aria-label="Nav Menu."></button>
         <nav>
@@ -49,6 +49,10 @@
         <h1>Scoots Reservations</h1>
         <section class="servAgree outerCard">
             <h2>Service Agreement</h2>
+            <p>Thank you for choosing Scoots for your Cozumel adventure! <br> Please read through the service agreement
+                below and submit the form to reserve your rental. And, if you have any questions, don't hesitate to call
+                us at #555-555-5555.</p>
+            <h4>Service Agreement Conditions:</h4>                
             <ul>
                 <li>A $50 security deposit is required to confirm reservations.</li>
                 <li>A valid drivers license is required in hand at the time of rental.</li>
@@ -63,19 +67,17 @@
             </ul>
         </section>
 
-        <section class="reservations outerCard">
+        <section class="reserve outerCard">
             <h2>Rental Reservation</h2>
             <form method="get" action="reservation-thanks.html" id="reservationForm">
-                <label>Rental Date*<input type="datetime-local" id="Date" name="date" required></label>
+                <label>Rental Date*<input type="datetime-local" id="date" name="date" required></label>
                 <fieldset>
                     <legend>Rental Period*</legend>
-                    <label><input type="radio" id="halfDay" name="period" value="half day" required>Half
+                    <label><input type="radio" id="halfDay" name="period" value="half day">Half
                         Day</label>
-                    <label><input type="radio" id="fullDay" name="period" value="full day" required>Full
+                    <label><input type="radio" id="fullDay" name="period" value="full day">Full
                         Day</label>
                 </fieldset>
-                <!-- <label>Rental Period*<input type="radio" id="halfDay" name="period" value="half day" required>Half Day</label>
-                <label>Rental Period*<input type="radio" id="fullDay" name="period" value="full day" required>Full Day</label> -->
                 <fieldset>
                     <legend>Rental Type*</legend>
                     <label><input type="radio" id="metro" name="rentalType" value="metro">Honda Metro Scooter</label>
@@ -87,19 +89,17 @@
                     <label><input type="radio" id="jeep2dr" name="rentalType" value="jeep2dr">Jeep Wrangler 2
                         Door</label>
                 </fieldset>
-                <label>How many of rental type<input type="number" id="quantity" name="quantity"
-                        placeholder="Enter a quantity. Up to 4 allowed per rental" required></label>
+                <label>How many of rental type*<input type="text" id="quantity" name="quantity"
+                        placeholder="Enter desired quantity of selected vehicle" pattern="[1-4]"
+                        title="Sorry, only up to 4 vehicles can be reserved per rental" required></label>
                 <label>First Name*<input type="text" id="fname" name="fname" required></label>
                 <label>Last Name*<input type="text" id="lname" name="lname" required></label>
-                <label>Phone Number<input type="tel" id="fname" name="fname" placeholder="ex. (1+) 555-555-5555"
+                <label>Phone Number*<input type="tel" id="phone" name="phone" placeholder="ex. (1+) 555-555-5555"
                         required></label>
-                <label>Email<input type="email" id="email" name="email" placeholder="myEmail@gmail.com"
-                        required></label>
-                <label>Home state or Country?<input type="text" id="Home" name="home"
-                        placeholder="What state or country do you reside in?" required></label>
-                <label>Cruise line if applicable<input type="text" id="cruise" name="cruise"></label>
-                <label>Special accommodations / comments such as shuttle service request. Please provide hotel or port
-                    name.<input type="text" id="comments" name="comments"></label>
+                <label>Email<input type="email" id="email" name="email" placeholder="myEmail@gmail.com"></label>
+                <label>Home state or Country?<input type="text" id="home" name="home"
+                        placeholder="What state or country do you reside in?"></label>
+                <label>Special accommodations / comments<textarea id="comments" name="comments" rows="6" cols="40" placeholder="If requesting shuttle service request, please provide your hotel, or cruise line and port name."></textarea></label>
 
                 <label><input type="submit" id="reserveSubmit" name="reserveSubmit" value="Reserve Your Rental"></label>
             </form>
@@ -130,7 +130,6 @@
     </footer>
     <!-- change? -->
     <script src="scripts/script.js"></script>
-    <script src="scripts/rentals.js"></script>
 </body>
 
 </html>
