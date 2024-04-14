@@ -86,7 +86,6 @@
 
     /* Rentals styles */
 
-
     /* Reservations styles */
     .servAgree p {
         margin: 0 5rem;
@@ -108,6 +107,11 @@
     /* Contact styles */
     .locations li {
         margin-left: 6rem;
+    }
+
+    .locations iframe {
+        width: 638px;
+        height: 478;
     }
 
     .contactForm form {

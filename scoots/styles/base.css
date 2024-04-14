@@ -196,7 +196,7 @@ h3 {
 }
 
 .outerCard {
-    margin: 1rem 3rem;
+    margin: 1rem;
     padding: 1rem;
     border: 1px solid lightgray;
     border-radius: 15px;
@@ -208,8 +208,8 @@ h3 {
 }
 
 .innerCard {
-    margin: 1rem 3rem;
-    padding: 1rem;
+    margin: 1rem;
+    padding: .5rem;
     border: 1px solid lightgray;
     border-radius: 20px;
     background-color: white;
@@ -282,10 +282,6 @@ h3 {
 
 
 /* Rentals Styles */
-.rentals .innerCard {
-    margin: 1rem 5rem 2rem 5rem;
-}
-
 .rentals table {
     width: auto;
     padding: 1rem;
@@ -426,6 +422,7 @@ h3 {
 
 .locations iframe {
     display: grid;
+    width: auto;
     margin: 1rem auto;
     border: 1px solid var(--main-light-grey);
     border-radius: 15px;
