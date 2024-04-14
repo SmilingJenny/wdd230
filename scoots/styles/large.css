@@ -7,6 +7,7 @@
         max-width: 1200px;
     }
 
+    
     /* Header */
     header {
         display: flex;
@@ -84,8 +85,6 @@
     }
 
 
-    /* Rentals styles */
-
     /* Reservations styles */
     .servAgree p {
         margin: 0 5rem;
@@ -104,6 +103,7 @@
         margin: 1rem 5rem;
     }
 
+
     /* Contact styles */
     .locations li {
         margin-left: 6rem;
@@ -111,16 +111,12 @@
 
     .locations iframe {
         width: 638px;
-        height: 478;
+        height: 478px;
     }
 
     .contactForm form {
         margin: 1rem 5rem;
     }
-
-
-    /* Form Thanks styles */
-    /* Attribution styles */
 
 
     /* Footer styles */
@@ -136,5 +132,5 @@
 
     .author {
         padding: 0;
-    }
+    }   
 }

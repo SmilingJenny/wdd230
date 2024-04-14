@@ -6,14 +6,9 @@
 }
 
 :root {
-    /* Remove if not used */
-    --main-title-font: "Lobster", sans-serif;
     --main-text-font: "Quicksand", sans-serif;
     --main-deep-blue: #046eb0;
     --main-light-blue: #3de6f5;
-    /* Remove if not used */
-    --main-deep-green: #418b24;
-    --main-green: #50ad2b;
     --main-yellow: #ffcc33;
     --main-orange: #ff9020;
     --main-deep-grey: rgb(205, 205, 205);
@@ -29,7 +24,7 @@ footer {
 }
 
 
-/* icon rule from google */
+/* ham menu icons rule from google */
 .material-symbols-outlined {
     font-variation-settings:
         'FILL' 0,
@@ -158,9 +153,6 @@ main {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background: linear-gradient(to top, var(--main-deep-blue), var(--main-light-blue), var(--main-deep-blue));
-    /* background: linear-gradient(to bottom, var(--main-deep-blue), var(--main-light-blue), var(--main-deep-green)); */
-    /* background-image: url("https://smilingjenny.github.io/wdd230/scoots/images/palm-trees-viola-pixabay-853-1280.webp"); */
-    /* background-size: cover; */
 }
 
 button {
@@ -216,8 +208,6 @@ h3 {
 }
 
 
-
-
 /* Home Styles */
 #reserveBtn {
     margin: 0 auto 2rem auto;
@@ -266,11 +256,6 @@ h3 {
     margin: 1rem 2rem;
 }
 
-.weather {
-    /* To give a little more space before footer */
-    margin-bottom: 2rem;
-}
-
 #weatherDisplay {
     display: grid;
     text-align: center;
@@ -312,11 +297,6 @@ h3 {
 
 .rentals tbody td {
     border-bottom: 1px solid var(--main-deep-grey);
-}
-
-/* maybe add js to link to reservations when clicked. ++ If clicking an option selects in on the reservations page */
-.rentals tbody tr:hover {
-    background-color: var(--main-deep-grey);
 }
 
 
@@ -370,11 +350,6 @@ h3 {
 
 .reserve legend {
     padding: 0 .5em;
-}
-
-/* do I need this rule? */
-.reserve fieldset label {
-    display: block;
 }
 
 .reserve fieldset label input {
@@ -529,4 +504,23 @@ footer {
     display: block;
     margin-bottom: .5rem;
     color: white;
+}
+
+/* Attribution Styles */
+
+.attributions div {
+    margin: 2rem;
+}
+
+.attributions p {
+    line-height: 1.75;
+}
+
+.attributions a {
+    color: var(--main-deep-blue);
+}
+
+#attrFooter {
+    display: flex;
+    justify-content: center;
 }
