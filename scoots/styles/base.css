@@ -481,7 +481,7 @@ h3 {
 
 
 /* Reservation and Contact Thank You Page Styles */
-.thanks section {
+.thanks div {
     text-align: center;
     font-size: larger;
     color: var(--main-deep-blue);
