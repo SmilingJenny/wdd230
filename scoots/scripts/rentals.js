@@ -24,6 +24,7 @@ function displayRentals(rentals) {
         img.setAttribute("alt", object.imgAlt)
         img.setAttribute("loading", "lazy")
         img.setAttribute("width", "75")
+        img.setAttribute("height", "56")
         picture.appendChild(img)
         name.textContent = object.name
         maxPeople.textContent = object.maxPeople
